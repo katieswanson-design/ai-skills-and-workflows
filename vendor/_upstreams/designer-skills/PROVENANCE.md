@@ -1,6 +1,7 @@
 # Owl-Listener/designer-skills
 
-Vendored copy. Do not edit these files — changes belong upstream.
+Provenance for the skills vendored from this upstream. The skills themselves are
+**not** in this directory — see *Where the skills live* below.
 
 | | |
 |---|---|
@@ -8,12 +9,31 @@ Vendored copy. Do not edit these files — changes belong upstream.
 | Commit | [`20e34c4`](https://github.com/Owl-Listener/designer-skills/commit/20e34c4a587e5eb09fcdf8351fa97b3ad761b31e) |
 | Committed | 2026-08-08 |
 | Vendored | 2026-08-29 |
-| Scope | every skill in the repo |
-| Skills | 107 |
+| Skills vendored | 107 |
 | License | MIT — see [LICENSE](LICENSE) |
 
-Skill directories keep their upstream paths, so a path here matches the path in
-[INDEX.md](../../INDEX.md) and upstream.
+## Where the skills live
 
-To refresh: re-clone Owl-Listener/designer-skills at a newer commit, copy the same skill directories
-over this tree, and update the commit and date above.
+`vendor/` is organised by category, not by source repo, so this upstream's skills are
+spread across category directories:
+
+`design` (87), `product-team` (20)
+
+[MANIFEST.tsv](../../MANIFEST.tsv) maps every vendored path back to its upstream repo
+and upstream path. To list just this upstream's skills:
+
+```bash
+awk -F'\t' '$2 == "designer-skills"' vendor/MANIFEST.tsv
+```
+
+## Refreshing
+
+1. Clone Owl-Listener/designer-skills at a newer commit.
+2. For each row in [MANIFEST.tsv](../../MANIFEST.tsv) with `upstream_repo` =
+   `designer-skills`, copy the upstream directory named in `upstream_path` over the local
+   directory named in `vendor_path`.
+3. Update the commit and dates in this file.
+4. Run `scripts/check-links.sh` and regenerate [INDEX.md](../../../INDEX.md) if any
+   skill was added, removed, or renamed.
+
+Do not edit the vendored files directly — changes belong upstream.
