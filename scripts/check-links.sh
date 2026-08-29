@@ -26,6 +26,7 @@ Checks, per row:
   * the GitHub URL and the path column agree
   * the linked skill name matches its directory
   * the description is non-empty
+  * the vendored copy exists at vendor/<repo>/<path> and the link points to it
   * no (repo, path) pair appears twice
 
 Then checks the category summary table against the rows below it.
@@ -64,10 +65,10 @@ if [ "$REMOTE" -eq 1 ] && ! command -v curl >/dev/null 2>&1; then
 fi
 
 # A skill row looks like:
-#   | [name](https://github.com/OWNER/REPO/blob/main/PATH) | description | `PATH` |
+#   | [name](https://github.com/OWNER/REPO/blob/main/PATH) | desc | [`PATH`](vendor/REPO/PATH) |
 # Anchored at both ends so the category summary table (which also starts with
 # "| [") and descriptions containing backticks are not picked up.
-ROW='^\| \[[^]]+\]\(https://github\.com/[^/]+/[^/]+/blob/main/[^)]+\) \| .* \| `[^`]+` \|$'
+ROW='^\| \[[^]]+\]\(https://github\.com/[^/]+/[^/]+/blob/main/[^)]+\) \| .* \| \[`[^`]+`\]\([^)]+\) \|$'
 
 FAIL=0
 note() { printf '  %-14s %s\n' "$1" "$2"; FAIL=$((FAIL+1)); }
@@ -84,8 +85,9 @@ seen=$(mktemp); trap 'rm -f "$seen"' EXIT
 while IFS= read -r line; do
   name=$(printf '%s' "$line" | sed -E 's#^\| \[([^]]+)\].*#\1#')
   url=$( printf '%s' "$line" | sed -E 's#^\| \[[^]]+\]\(([^)]+)\).*#\1#')
-  path=$(printf '%s' "$line" | sed -E 's#.*`([^`]+)` \|$#\1#')
-  desc=$(printf '%s' "$line" | sed -E 's#^\| \[[^]]+\]\([^)]+\) \| ##; s# \| `[^`]+` \|$##')
+  path=$(printf '%s' "$line" | sed -E 's#.*\[`([^`]+)`\]\([^)]+\) \|$#\1#')
+  vend=$(printf '%s' "$line" | sed -E 's#.*\[`[^`]+`\]\(([^)]+)\) \|$#\1#')
+  desc=$(printf '%s' "$line" | sed -E 's#^\| \[[^]]+\]\([^)]+\) \| ##; s# \| \[`[^`]+`\]\([^)]+\) \|$##')
   slug=$(   printf '%s' "$url" | sed -E 's#^https://github\.com/([^/]+/[^/]+)/blob/main/.*#\1#')
   urlpath=$(printf '%s' "$url" | sed -E 's#^https://github\.com/[^/]+/[^/]+/blob/main/##')
   repo=${slug#*/}
@@ -109,6 +111,10 @@ while IFS= read -r line; do
   else
     printf '%s|%s\n' "$slug" "$path" >> "$seen"
   fi
+
+  [ "$vend" = "vendor/$repo/$path" ] \
+    || note "VENDOR-LINK" "$slug :: expected vendor/$repo/$path, link says $vend"
+  [ -f "$vend" ] || note "VENDOR-MISSING" "$vend"
 
   if [ -n "$CLONES" ] && [ ! -f "$CLONES/$repo/$path" ]; then
     note "NO-LOCAL-FILE" "$repo/$path"

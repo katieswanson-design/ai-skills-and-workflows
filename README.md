@@ -6,18 +6,22 @@ for my own.
 - **[SOURCES.md](SOURCES.md)** — the upstream repos, their licenses, and the
   specific skills bookmarked from each. Also holds the link validity rule that
   distinguishes an installable skill from generated docs or an agent-format mirror.
-- **[INDEX.md](INDEX.md)** — the curated index: 305 skills grouped by
-  category, each with a one-line description from its upstream frontmatter and a
-  verified source path.
+- **[INDEX.md](INDEX.md)** — the curated index: 305 skills grouped by category, each
+  with a one-line description from its upstream frontmatter, a link upstream, and a
+  link to the local copy.
 - **`skills/`** — my own skills.
-- **`vendor/`** — vetted external skills actually installed here.
+- **[`vendor/`](vendor/)** — the 305 external skills themselves, vendored from six
+  MIT-licensed upstreams with their licenses and pinned provenance.
 - **`scripts/`** — maintenance scripts. See [Scripts](#scripts).
 
 ## Licensing
 
-Upstreams are MIT except `mgifford/accessibility-skills`, which is AGPL-3.0 and is
-linked rather than vendored. Anything copied into `vendor/` keeps its upstream
-license and attribution.
+All six vendored upstreams are MIT. Each `vendor/<repo>/` keeps the upstream
+`LICENSE` alongside the skills, as MIT requires, plus a `PROVENANCE.md` pinning the
+exact commit it was taken from.
+
+`mgifford/accessibility-skills` is AGPL-3.0 and is deliberately **not** vendored —
+link to it or use a submodule. See [vendor/README.md](vendor/README.md).
 
 ## Scripts
 
@@ -34,6 +38,7 @@ For each row it checks that:
   generated docs and agent-format mirrors can't slip in;
 - the GitHub URL and the path column agree;
 - the linked skill name matches its directory;
+- the vendored copy exists and the path column links to it;
 - the description is non-empty;
 - no `(repo, path)` pair appears twice.
 

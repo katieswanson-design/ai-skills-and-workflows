@@ -62,7 +62,11 @@ Categories with zero entries are left out rather than stubbed.
 | Owl-Listener/inclusive-design-skills | 58 | Full repo (56 unique names; `review` appears in 3 folders) |
 | tjboudreaux/cc-thinking-skills | 28 | Full repo |
 | cuellarfr/design-skills | 10 | Full repo |
-| mgifford/accessibility-skills | 0 | AGPL-3.0 — not cloned, not indexed |
+| mgifford/accessibility-skills | 0 | AGPL-3.0 — not cloned, not indexed, not vendored |
+
+Every indexed skill is vendored into [`vendor/`](vendor/) at the upstream commit
+pinned in each `vendor/<repo>/PROVENANCE.md`, with the upstream MIT `LICENSE`
+preserved alongside it.
 
 The accessibility and thinking-models categories are now populated from
 inclusive-design-skills and cc-thinking-skills respectively.
