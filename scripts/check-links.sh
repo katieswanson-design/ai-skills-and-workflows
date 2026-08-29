@@ -27,6 +27,7 @@ Checks, per row:
   * the linked skill name matches its directory
   * the description is non-empty
   * the vendored copy exists under vendor/<category>/ and is listed in MANIFEST.tsv
+  * the skill folder carries its own LICENSE
   * no (repo, path) pair appears twice
 
 Then checks the category summary table against the rows below it.
@@ -116,6 +117,8 @@ while IFS= read -r line; do
   case "$vend" in vendor/*/*/SKILL.md) ;; *) note "VENDOR-LINK" "$slug :: odd vendor path $vend" ;; esac
   grep -qF "$(printf '%s' "$vend" | sed 's#^vendor/##; s#/SKILL\.md$##')	" vendor/MANIFEST.tsv \
     || note "NOT-IN-MANIFEST" "$vend"
+  # every skill folder carries its own license, so a skill copied out stays compliant
+  [ -f "$(dirname "$vend")/LICENSE" ] || note "NO-LICENSE" "$(dirname "$vend")"
   [ -f "$vend" ] || note "VENDOR-MISSING" "$vend"
 
   if [ -n "$CLONES" ] && [ ! -f "$CLONES/$repo/$path" ]; then

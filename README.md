@@ -11,8 +11,9 @@ for my own.
   copy, and a link upstream. Skills bookmarked in SOURCES.md are starred.
 - **`skills/`** — my own skills.
 - **[`vendor/`](vendor/)** — the 639 external skills themselves, organised by
-  category as `vendor/<category>/<skill>/`, with upstream licenses, pinned
-  provenance, and a `MANIFEST.tsv` mapping each one back to its source.
+  category as `vendor/<category>/<skill>/`. Each skill folder carries its own
+  upstream license, so it can be copied out on its own; `PROVENANCE.md` and
+  `MANIFEST.tsv` record where every one came from.
 - **`scripts/`** — maintenance scripts. See [Scripts](#scripts).
 
 ## Licensing
@@ -39,7 +40,8 @@ For each row it checks that:
   generated docs and agent-format mirrors can't slip in;
 - the GitHub URL and the path column agree;
 - the linked skill name matches its directory;
-- the vendored copy exists under `vendor/<category>/` and is listed in `MANIFEST.tsv`;
+- the vendored copy exists under `vendor/<category>/`, is listed in `MANIFEST.tsv`,
+  and carries its own `LICENSE`;
 - the description is non-empty;
 - no `(repo, path)` pair appears twice.
 

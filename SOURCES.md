@@ -66,9 +66,9 @@ Categories with zero entries are left out rather than stubbed.
 | mgifford/accessibility-skills | 0 | AGPL-3.0 — not cloned, not indexed, not vendored |
 
 Every indexed skill is vendored into [`vendor/`](vendor/), organised by category as
-`vendor/<category>/<skill>/` rather than by source repo. Licenses and pinned
-provenance live in `vendor/_upstreams/<repo>/`, and `vendor/MANIFEST.tsv` maps every
-vendored path back to its upstream repo and path.
+`vendor/<category>/<skill>/` rather than by source repo. Each skill folder carries its own
+upstream `LICENSE`, `vendor/PROVENANCE.md` pins the commit each repo was taken at,
+and `vendor/MANIFEST.tsv` maps every vendored path back to its upstream repo and path.
 
 The 651 skills passing the link validity rule become 639 entries: claude-skills
 ships 12 skills at two paths each with byte-identical contents, so one copy of each
