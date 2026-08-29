@@ -48,29 +48,38 @@ Folder-level bookmarks, not yet broken out into individual entries:
 | product-team | `product-team/skills/` | competitive-teardown, experiment-designer, landing-page-generator, product-analytics, product-discovery, product-manager-toolkit, product-skills, product-strategist, roadmap-communicator, saas-scaffolder, spec-to-repo, ui-design-system, ux-researcher-designer |
 | markdown-html | `markdown-html/skills/` | md-review, design-system, md-slides, markdown-html-orchestrator, md-document |
 
-## Category gaps
+## Coverage
 
-[INDEX.md](INDEX.md) is organized into five categories: product management, product
-team, productivity, design, engineering. Categories with zero entries are left out
-rather than stubbed.
+[INDEX.md](INDEX.md) indexes 305 skills across seven categories: product management,
+product team, productivity, design, engineering, accessibility, thinking models.
+Categories with zero entries are left out rather than stubbed.
 
-Two areas are currently unrepresented because nothing has been bookmarked for them:
+| Repo | Indexed | Basis |
+|---|---:|---|
+| alirezarezvani/claude-skills | 34 | Bookmarked skills only (8 individual + 27 across 3 folders, `senior-pm` deduplicated) |
+| Owl-Listener/designer-skills | 107 | Full repo |
+| phuryn/pm-skills | 68 | Full repo |
+| Owl-Listener/inclusive-design-skills | 58 | Full repo (56 unique names; `review` appears in 3 folders) |
+| tjboudreaux/cc-thinking-skills | 28 | Full repo |
+| cuellarfr/design-skills | 10 | Full repo |
+| mgifford/accessibility-skills | 0 | AGPL-3.0 — not cloned, not indexed |
 
-| Gap | Repo that would fill it | Note |
-|---|---|---|
-| Accessibility | [mgifford/accessibility-skills](https://github.com/mgifford/accessibility-skills) | 33 skills, WCAG technical a11y, axe rules, CI/CD. AGPL-3.0 — link or submodule only, do not vendor. |
-| Thinking models | [tjboudreaux/cc-thinking-skills](https://github.com/tjboudreaux/cc-thinking-skills) | 28 skills, mental models, all prefixed `thinking-`. MIT. |
+The accessibility and thinking-models categories are now populated from
+inclusive-design-skills and cc-thinking-skills respectively.
+mgifford/accessibility-skills remains unindexed: it is AGPL-3.0, so link to it or use
+a submodule, but do not vendor its files here.
 
-Add bookmarks from either repo and the matching category can be created in INDEX.md.
-
-More broadly: five of the seven upstream repos above have no bookmarks recorded yet
-(designer-skills, pm-skills, inclusive-design-skills, cc-thinking-skills,
-design-skills). Every entry currently in INDEX.md comes from
-alirezarezvani/claude-skills.
+Skill names are not unique across the index. `accessibility-audit`, `design-critique`,
+and `ux-writing` each appear in both cuellarfr/design-skills and
+Owl-Listener/designer-skills; `interview-script` and `summarize-interview` appear in
+both designer-skills and pm-skills; `review` appears three times inside
+inclusive-design-skills. INDEX.md lists every one and disambiguates by path.
 
 ## Link validity rule
 
-A valid index target ends in `/skills/<name>/SKILL.md` and contains neither `/docs/`
-nor a dot-directory. Anything else is generated documentation or an agent-format
-mirror (`.claude/`, `.codex/`, `.gemini/`, `.hermes/`, `.vibe/`), not an installable
-skill. Worth enforcing with a link-check script once the repo exists.
+A valid index target matches `(^|/)skills/<name>/SKILL.md` and contains neither
+`/docs/` nor a dot-directory. The `skills/` directory may sit at the repo root
+(cc-thinking-skills, design-skills) or under a grouping folder (the other four).
+Anything else is generated documentation or an agent-format mirror (`.claude/`,
+`.codex/`, `.gemini/`, `.hermes/`, `.vibe/`), not an installable skill. Worth
+enforcing with a link-check script.
