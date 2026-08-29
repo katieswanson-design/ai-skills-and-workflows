@@ -66,9 +66,11 @@ fi
 
 # A skill row looks like:
 #   | [name](https://github.com/OWNER/REPO/blob/main/PATH) | desc | [`PATH`](vendor/REPO/PATH) |
+# optionally prefixed with a star marking a SOURCES.md bookmark:
+#   | * [name](...) | desc | [`PATH`](...) |
 # Anchored at both ends so the category summary table (which also starts with
 # "| [") and descriptions containing backticks are not picked up.
-ROW='^\| \[[^]]+\]\(https://github\.com/[^/]+/[^/]+/blob/main/[^)]+\) \| .* \| \[`[^`]+`\]\([^)]+\) \|$'
+ROW='^\| [^[]*\[[^]]+\]\(https://github\.com/[^/]+/[^/]+/blob/main/[^)]+\) \| .* \| \[`[^`]+`\]\([^)]+\) \|$'
 
 FAIL=0
 note() { printf '  %-14s %s\n' "$1" "$2"; FAIL=$((FAIL+1)); }
@@ -83,11 +85,11 @@ echo "structure, link rule, and internal consistency:"
 seen=$(mktemp); trap 'rm -f "$seen"' EXIT
 
 while IFS= read -r line; do
-  name=$(printf '%s' "$line" | sed -E 's#^\| \[([^]]+)\].*#\1#')
-  url=$( printf '%s' "$line" | sed -E 's#^\| \[[^]]+\]\(([^)]+)\).*#\1#')
+  name=$(printf '%s' "$line" | sed -E 's#^\| [^[]*\[([^]]+)\].*#\1#')
+  url=$( printf '%s' "$line" | sed -E 's#^\| [^[]*\[[^]]+\]\(([^)]+)\).*#\1#')
   path=$(printf '%s' "$line" | sed -E 's#.*\[`([^`]+)`\]\([^)]+\) \|$#\1#')
   vend=$(printf '%s' "$line" | sed -E 's#.*\[`[^`]+`\]\(([^)]+)\) \|$#\1#')
-  desc=$(printf '%s' "$line" | sed -E 's#^\| \[[^]]+\]\([^)]+\) \| ##; s# \| \[`[^`]+`\]\([^)]+\) \|$##')
+  desc=$(printf '%s' "$line" | sed -E 's#^\| [^[]*\[[^]]+\]\([^)]+\) \| ##; s# \| \[`[^`]+`\]\([^)]+\) \|$##')
   slug=$(   printf '%s' "$url" | sed -E 's#^https://github\.com/([^/]+/[^/]+)/blob/main/.*#\1#')
   urlpath=$(printf '%s' "$url" | sed -E 's#^https://github\.com/[^/]+/[^/]+/blob/main/##')
   repo=${slug#*/}
@@ -129,7 +131,7 @@ echo
 echo "category counts:"
 counts=$(awk '
   /^## /   { cat = substr($0, 4); next }
-  /^\| \[/ { if (cat != "" && $0 ~ /blob\/main\//) n[cat]++ }
+  /^\| /  { if (cat != "" && $0 ~ /blob\/main\//) n[cat]++ }
   END      { for (c in n) printf "%s\t%d\n", c, n[c] }
 ' "$INDEX" | sort)
 while IFS="$(printf '\t')" read -r cat n; do

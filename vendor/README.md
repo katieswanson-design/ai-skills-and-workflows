@@ -1,6 +1,6 @@
 # vendor/
 
-Vendored copies of every skill listed in [INDEX.md](../INDEX.md) — 305 skills from
+Vendored copies of every skill listed in [INDEX.md](../INDEX.md) — 651 skills from
 six upstream repos, all MIT-licensed.
 
 These are third-party files. **Don't edit them here**; changes belong upstream. Your
@@ -20,7 +20,7 @@ a path in the upstream repo are all the same string. Each vendored repo also has
 
 | Directory | Skills | Upstream | Scope |
 |---|---:|---|---|
-| `claude-skills/` | 34 | [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | Bookmarked skills only |
+| `claude-skills/` | 380 | [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | Full repo |
 | `designer-skills/` | 107 | [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills) | Full repo |
 | `pm-skills/` | 68 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | Full repo |
 | `inclusive-design-skills/` | 58 | [Owl-Listener/inclusive-design-skills](https://github.com/Owl-Listener/inclusive-design-skills) | Full repo |

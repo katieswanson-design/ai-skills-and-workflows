@@ -50,13 +50,14 @@ Folder-level bookmarks, not yet broken out into individual entries:
 
 ## Coverage
 
-[INDEX.md](INDEX.md) indexes 305 skills across seven categories: product management,
-product team, productivity, design, engineering, accessibility, thinking models.
+[INDEX.md](INDEX.md) indexes 651 skills across eleven categories: product management,
+product team, productivity, design, engineering, marketing & growth, leadership &
+strategy, business & finance, compliance & risk, accessibility, thinking models.
 Categories with zero entries are left out rather than stubbed.
 
 | Repo | Indexed | Basis |
 |---|---:|---|
-| alirezarezvani/claude-skills | 34 | Bookmarked skills only (8 individual + 27 across 3 folders, `senior-pm` deduplicated) |
+| alirezarezvani/claude-skills | 380 | Full repo (the 34 bookmarked below are starred in INDEX.md) |
 | Owl-Listener/designer-skills | 107 | Full repo |
 | phuryn/pm-skills | 68 | Full repo |
 | Owl-Listener/inclusive-design-skills | 58 | Full repo (56 unique names; `review` appears in 3 folders) |
@@ -68,16 +69,17 @@ Every indexed skill is vendored into [`vendor/`](vendor/) at the upstream commit
 pinned in each `vendor/<repo>/PROVENANCE.md`, with the upstream MIT `LICENSE`
 preserved alongside it.
 
-The accessibility and thinking-models categories are now populated from
-inclusive-design-skills and cc-thinking-skills respectively.
-mgifford/accessibility-skills remains unindexed: it is AGPL-3.0, so link to it or use
-a submodule, but do not vendor its files here.
+Counts differ from the table at the top of this file, which was compiled earlier:
+claude-skills holds 380 skill directories passing the link validity rule, not 374,
+and inclusive-design-skills holds 58 (56 unique names). The per-repo figures above
+were measured against the pinned clones.
 
-Skill names are not unique across the index. `accessibility-audit`, `design-critique`,
-and `ux-writing` each appear in both cuellarfr/design-skills and
+Skill names are not unique across the index. `accessibility-audit`,
+`design-critique`, and `ux-writing` each appear in both cuellarfr/design-skills and
 Owl-Listener/designer-skills; `interview-script` and `summarize-interview` appear in
 both designer-skills and pm-skills; `review` appears three times inside
-inclusive-design-skills. INDEX.md lists every one and disambiguates by path.
+inclusive-design-skills; and claude-skills has 14 internal name collisions across its
+domain folders. INDEX.md lists every one and disambiguates by path.
 
 ## Link validity rule
 

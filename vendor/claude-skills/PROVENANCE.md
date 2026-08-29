@@ -8,8 +8,8 @@ Vendored copy. Do not edit these files — changes belong upstream.
 | Commit | [`19392f7`](https://github.com/alirezarezvani/claude-skills/commit/19392f7a08264ed00486a251f5b2098321771f94) |
 | Committed | 2026-08-26 |
 | Vendored | 2026-08-29 |
-| Scope | the 34 skills bookmarked in SOURCES.md |
-| Skills | 34 |
+| Scope | every skill in the repo |
+| Skills | 380 |
 | License | MIT — see [LICENSE](LICENSE) |
 
 Skill directories keep their upstream paths, so a path here matches the path in

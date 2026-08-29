@@ -6,11 +6,11 @@ for my own.
 - **[SOURCES.md](SOURCES.md)** — the upstream repos, their licenses, and the
   specific skills bookmarked from each. Also holds the link validity rule that
   distinguishes an installable skill from generated docs or an agent-format mirror.
-- **[INDEX.md](INDEX.md)** — the curated index: 305 skills grouped by category, each
+- **[INDEX.md](INDEX.md)** — the curated index: 651 skills grouped by category, each
   with a one-line description from its upstream frontmatter, a link upstream, and a
-  link to the local copy.
+  link to the local copy. Skills bookmarked in SOURCES.md are starred.
 - **`skills/`** — my own skills.
-- **[`vendor/`](vendor/)** — the 305 external skills themselves, vendored from six
+- **[`vendor/`](vendor/)** — the 651 external skills themselves, vendored from six
   MIT-licensed upstreams with their licenses and pinned provenance.
 - **`scripts/`** — maintenance scripts. See [Scripts](#scripts).
 
