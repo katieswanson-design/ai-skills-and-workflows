@@ -81,5 +81,5 @@ A valid index target matches `(^|/)skills/<name>/SKILL.md` and contains neither
 `/docs/` nor a dot-directory. The `skills/` directory may sit at the repo root
 (cc-thinking-skills, design-skills) or under a grouping folder (the other four).
 Anything else is generated documentation or an agent-format mirror (`.claude/`,
-`.codex/`, `.gemini/`, `.hermes/`, `.vibe/`), not an installable skill. Worth
-enforcing with a link-check script.
+`.codex/`, `.gemini/`, `.hermes/`, `.vibe/`), not an installable skill. Enforced by
+[`scripts/check-links.sh`](scripts/check-links.sh).
