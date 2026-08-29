@@ -50,14 +50,14 @@ Folder-level bookmarks, not yet broken out into individual entries:
 
 ## Coverage
 
-[INDEX.md](INDEX.md) indexes 651 skills across eleven categories: product management,
+[INDEX.md](INDEX.md) indexes 639 skills across eleven categories: product management,
 product team, productivity, design, engineering, marketing & growth, leadership &
 strategy, business & finance, compliance & risk, accessibility, thinking models.
 Categories with zero entries are left out rather than stubbed.
 
 | Repo | Indexed | Basis |
 |---|---:|---|
-| alirezarezvani/claude-skills | 380 | Full repo (the 34 bookmarked below are starred in INDEX.md) |
+| alirezarezvani/claude-skills | 368 | Full repo, less 12 exact duplicates (the 34 bookmarked below are starred in INDEX.md) |
 | Owl-Listener/designer-skills | 107 | Full repo |
 | phuryn/pm-skills | 68 | Full repo |
 | Owl-Listener/inclusive-design-skills | 58 | Full repo (56 unique names; `review` appears in 3 folders) |
@@ -65,9 +65,14 @@ Categories with zero entries are left out rather than stubbed.
 | cuellarfr/design-skills | 10 | Full repo |
 | mgifford/accessibility-skills | 0 | AGPL-3.0 — not cloned, not indexed, not vendored |
 
-Every indexed skill is vendored into [`vendor/`](vendor/) at the upstream commit
-pinned in each `vendor/<repo>/PROVENANCE.md`, with the upstream MIT `LICENSE`
-preserved alongside it.
+Every indexed skill is vendored into [`vendor/`](vendor/), organised by category as
+`vendor/<category>/<skill>/` rather than by source repo. Licenses and pinned
+provenance live in `vendor/_upstreams/<repo>/`, and `vendor/MANIFEST.tsv` maps every
+vendored path back to its upstream repo and path.
+
+The 651 skills passing the link validity rule become 639 entries: claude-skills
+ships 12 skills at two paths each with byte-identical contents, so one copy of each
+is kept and the dropped path is recorded in `vendor/MANIFEST.tsv`.
 
 Counts differ from the table at the top of this file, which was compiled earlier:
 claude-skills holds 380 skill directories passing the link validity rule, not 374,

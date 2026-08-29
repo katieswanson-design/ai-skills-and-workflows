@@ -26,7 +26,7 @@ Checks, per row:
   * the GitHub URL and the path column agree
   * the linked skill name matches its directory
   * the description is non-empty
-  * the vendored copy exists at vendor/<repo>/<path> and the link points to it
+  * the vendored copy exists under vendor/<category>/ and is listed in MANIFEST.tsv
   * no (repo, path) pair appears twice
 
 Then checks the category summary table against the rows below it.
@@ -65,12 +65,11 @@ if [ "$REMOTE" -eq 1 ] && ! command -v curl >/dev/null 2>&1; then
 fi
 
 # A skill row looks like:
-#   | [name](https://github.com/OWNER/REPO/blob/main/PATH) | desc | [`PATH`](vendor/REPO/PATH) |
-# optionally prefixed with a star marking a SOURCES.md bookmark:
-#   | * [name](...) | desc | [`PATH`](...) |
+#   | [name](vendor/CATEGORY/name/SKILL.md) | desc | [`PATH`](https://github.com/OWNER/REPO/blob/main/PATH) |
+# optionally prefixed with a star marking a SOURCES.md bookmark.
 # Anchored at both ends so the category summary table (which also starts with
 # "| [") and descriptions containing backticks are not picked up.
-ROW='^\| [^[]*\[[^]]+\]\(https://github\.com/[^/]+/[^/]+/blob/main/[^)]+\) \| .* \| \[`[^`]+`\]\([^)]+\) \|$'
+ROW='^\| [^[]*\[[^]]+\]\(vendor/[^)]+\) \| .* \| \[`[^`]+`\]\(https://github\.com/[^/]+/[^/]+/blob/main/[^)]+\) \|$'
 
 FAIL=0
 note() { printf '  %-14s %s\n' "$1" "$2"; FAIL=$((FAIL+1)); }
@@ -86,9 +85,9 @@ seen=$(mktemp); trap 'rm -f "$seen"' EXIT
 
 while IFS= read -r line; do
   name=$(printf '%s' "$line" | sed -E 's#^\| [^[]*\[([^]]+)\].*#\1#')
-  url=$( printf '%s' "$line" | sed -E 's#^\| [^[]*\[[^]]+\]\(([^)]+)\).*#\1#')
+  vend=$(printf '%s' "$line" | sed -E 's#^\| [^[]*\[[^]]+\]\(([^)]+)\).*#\1#')
   path=$(printf '%s' "$line" | sed -E 's#.*\[`([^`]+)`\]\([^)]+\) \|$#\1#')
-  vend=$(printf '%s' "$line" | sed -E 's#.*\[`[^`]+`\]\(([^)]+)\) \|$#\1#')
+  url=$( printf '%s' "$line" | sed -E 's#.*\[`[^`]+`\]\(([^)]+)\) \|$#\1#')
   desc=$(printf '%s' "$line" | sed -E 's#^\| [^[]*\[[^]]+\]\([^)]+\) \| ##; s# \| \[`[^`]+`\]\([^)]+\) \|$##')
   slug=$(   printf '%s' "$url" | sed -E 's#^https://github\.com/([^/]+/[^/]+)/blob/main/.*#\1#')
   urlpath=$(printf '%s' "$url" | sed -E 's#^https://github\.com/[^/]+/[^/]+/blob/main/##')
@@ -103,7 +102,7 @@ while IFS= read -r line; do
 
   [ "$urlpath" = "$path" ] || note "URL-MISMATCH" "$slug :: path column says $path, url says $urlpath"
 
-  dir=$(basename "$(dirname "$path")")
+  dir=$(basename "$(dirname "$vend")")
   [ "$dir" = "$name" ] || note "NAME-MISMATCH" "$slug :: link says $name, directory is $dir"
 
   [ -n "$(printf '%s' "$desc" | tr -d '[:space:]')" ] || note "EMPTY-DESC" "$slug :: $name"
@@ -114,8 +113,9 @@ while IFS= read -r line; do
     printf '%s|%s\n' "$slug" "$path" >> "$seen"
   fi
 
-  [ "$vend" = "vendor/$repo/$path" ] \
-    || note "VENDOR-LINK" "$slug :: expected vendor/$repo/$path, link says $vend"
+  case "$vend" in vendor/*/*/SKILL.md) ;; *) note "VENDOR-LINK" "$slug :: odd vendor path $vend" ;; esac
+  grep -qF "$(printf '%s' "$vend" | sed 's#^vendor/##; s#/SKILL\.md$##')	" vendor/MANIFEST.tsv \
+    || note "NOT-IN-MANIFEST" "$vend"
   [ -f "$vend" ] || note "VENDOR-MISSING" "$vend"
 
   if [ -n "$CLONES" ] && [ ! -f "$CLONES/$repo/$path" ]; then

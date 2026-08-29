@@ -6,12 +6,13 @@ for my own.
 - **[SOURCES.md](SOURCES.md)** — the upstream repos, their licenses, and the
   specific skills bookmarked from each. Also holds the link validity rule that
   distinguishes an installable skill from generated docs or an agent-format mirror.
-- **[INDEX.md](INDEX.md)** — the curated index: 651 skills grouped by category, each
-  with a one-line description from its upstream frontmatter, a link upstream, and a
-  link to the local copy. Skills bookmarked in SOURCES.md are starred.
+- **[INDEX.md](INDEX.md)** — the curated index: 639 skills grouped by category, each
+  with a one-line description from its upstream frontmatter, a link to the local
+  copy, and a link upstream. Skills bookmarked in SOURCES.md are starred.
 - **`skills/`** — my own skills.
-- **[`vendor/`](vendor/)** — the 651 external skills themselves, vendored from six
-  MIT-licensed upstreams with their licenses and pinned provenance.
+- **[`vendor/`](vendor/)** — the 639 external skills themselves, organised by
+  category as `vendor/<category>/<skill>/`, with upstream licenses, pinned
+  provenance, and a `MANIFEST.tsv` mapping each one back to its source.
 - **`scripts/`** — maintenance scripts. See [Scripts](#scripts).
 
 ## Licensing
@@ -38,7 +39,7 @@ For each row it checks that:
   generated docs and agent-format mirrors can't slip in;
 - the GitHub URL and the path column agree;
 - the linked skill name matches its directory;
-- the vendored copy exists and the path column links to it;
+- the vendored copy exists under `vendor/<category>/` and is listed in `MANIFEST.tsv`;
 - the description is non-empty;
 - no `(repo, path)` pair appears twice.
 
@@ -52,8 +53,8 @@ below it, so the counts can't drift as entries are added.
 Two optional checks. The default run is offline and needs nothing beyond coreutils;
 neither of these is required for the index to be valid.
 
-Verify each path exists in local clones of the upstream repos, where `DIR` holds
-clones named after each repo (`DIR/designer-skills/`, `DIR/pm-skills/`, …):
+Verify each upstream path still exists in local clones of the upstream repos, where
+`DIR` holds clones named after each repo (`DIR/designer-skills/`, `DIR/pm-skills/`, …):
 
 ```bash
 ./scripts/check-links.sh --clones ~/src/upstreams
