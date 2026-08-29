@@ -48,6 +48,26 @@ Folder-level bookmarks, not yet broken out into individual entries:
 | product-team | `product-team/skills/` | competitive-teardown, experiment-designer, landing-page-generator, product-analytics, product-discovery, product-manager-toolkit, product-skills, product-strategist, roadmap-communicator, saas-scaffolder, spec-to-repo, ui-design-system, ux-researcher-designer |
 | markdown-html | `markdown-html/skills/` | md-review, design-system, md-slides, markdown-html-orchestrator, md-document |
 
+## Category gaps
+
+[INDEX.md](INDEX.md) is organized into five categories: product management, product
+team, productivity, design, engineering. Categories with zero entries are left out
+rather than stubbed.
+
+Two areas are currently unrepresented because nothing has been bookmarked for them:
+
+| Gap | Repo that would fill it | Note |
+|---|---|---|
+| Accessibility | [mgifford/accessibility-skills](https://github.com/mgifford/accessibility-skills) | 33 skills, WCAG technical a11y, axe rules, CI/CD. AGPL-3.0 — link or submodule only, do not vendor. |
+| Thinking models | [tjboudreaux/cc-thinking-skills](https://github.com/tjboudreaux/cc-thinking-skills) | 28 skills, mental models, all prefixed `thinking-`. MIT. |
+
+Add bookmarks from either repo and the matching category can be created in INDEX.md.
+
+More broadly: five of the seven upstream repos above have no bookmarks recorded yet
+(designer-skills, pm-skills, inclusive-design-skills, cc-thinking-skills,
+design-skills). Every entry currently in INDEX.md comes from
+alirezarezvani/claude-skills.
+
 ## Link validity rule
 
 A valid index target ends in `/skills/<name>/SKILL.md` and contains neither `/docs/`
