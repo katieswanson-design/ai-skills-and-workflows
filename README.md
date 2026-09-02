@@ -1,6 +1,6 @@
 # **AI-skills-and-workflows**
 
-## **Curated skills and workflows**
+###  Curated skills and workflows
 
 The way we build, think, and execute has shifted faster in the last couple of years than ever before. Across every discipline, people are sharing clever prompts, streamlined workflows, and smart automations to solve real problems.
 
@@ -19,11 +19,11 @@ What started as a focused collection of design-related skills has grown alongsid
 
 Because modern workflows evolve continuously, this space is built to grow as new patterns emerge. It is intentionally open-ended so it can serve as a living, adaptable library rather than a static snapshot.
 
-## **Licensing and attribution**
+### Licensing and attribution
 
 Credit belongs to the original creators. Whenever a workflow, prompt, or skill comes from someone else, I make sure to include their original license, source link, and attribution directly within its file or directory. Please check those individual files if you plan to adapt or redistribute specific assets.
 
-## **Say hello 👋**
+### Say hello 👋
 
 While this is primarily a personal reference, great finds are always worth sharing. If you stumble upon this repo and have a workflow, tool, or resource you think would fit well here, feel free to open an issue, start a discussion, or reach out directly.
 
