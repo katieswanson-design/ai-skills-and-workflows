@@ -1,5 +1,5 @@
 ---
-name: review
+name: review-cognitive-accessibility
 description: "Run a full cognitive accessibility review of a flow, screen, or interface. Chains: cognitive-load-assessment, plain-language-design, wayfinding-navigation, error-prevention-recovery, focus-attention-design, memory-load-reduction."
 ---
 

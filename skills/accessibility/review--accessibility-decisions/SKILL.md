@@ -1,5 +1,5 @@
 ---
-name: review
+name: review-accessibility-decisions
 description: "Review and surface undocumented accessibility assumptions in an existing feature or product. Chains: decision-documentation, tradeoff-analysis, compliance-mapping, accessibility-debt-tracking. Use when inheriting a product, joining a team, or auditing a feature where accessibility decisions were never formally captured."
 ---
 

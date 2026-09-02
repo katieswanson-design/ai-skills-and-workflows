@@ -1,5 +1,5 @@
 ---
-name: review
+name: review-accessible-content
 description: "Review content for accessibility across cognitive and literacy levels. Chains: readable-content, alt-text-design, heading-structure, link-text-design, table-accessibility, form-labelling, multimedia-accessibility. Use when auditing existing content for accessibility."
 ---
 
