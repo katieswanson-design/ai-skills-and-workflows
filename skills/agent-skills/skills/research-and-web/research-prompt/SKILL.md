@@ -39,4 +39,4 @@ Goal: turn a vague research need into ONE self-contained paragraph that a resear
 
 ## Executing the prompt
 
-To run the finished prompt with an AI researcher, execute it via DeepAPI `POST /v1/research/deep` — follow the `deep-research` skill.
+To run the finished prompt with an AI researcher, execute it via DeepAPI `POST /v1/research/deep` — follow the `deepapi-research` skill.
