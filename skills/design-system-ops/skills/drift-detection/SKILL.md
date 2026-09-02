@@ -5,6 +5,8 @@ references:
   - ../../knowledge-notes/token-architecture.md
   - ../../knowledge-notes/design-to-code-contract.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: audit
 ---
 
 # Drift detection

@@ -4,6 +4,8 @@ description: "Write usage guidelines for a specific, named component — coverin
 references:
   - ../../knowledge-notes/ai-readiness.md
   - ../../knowledge-notes/component-bestiary-reference.md
+layer: atomic
+function: document
 ---
 
 # Usage guidelines

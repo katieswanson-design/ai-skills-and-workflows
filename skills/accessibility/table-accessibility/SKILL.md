@@ -1,6 +1,8 @@
 ---
 name: table-accessibility
 description: "Design data tables that work for screen readers and cognitive accessibility. Use when creating or reviewing tables, data grids, comparison tables, pricing tables, or any tabular data. Triggers on: table, data table, grid, spreadsheet, comparison table, pricing table, screen reader table, table headers, scope, caption, complex table."
+layer: atomic
+function: design
 ---
 
 # Table Accessibility

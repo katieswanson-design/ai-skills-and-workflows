@@ -1,6 +1,8 @@
 ---
 name: disability-inclusive-personas
 description: "Create user personas that include disability as a natural dimension of human diversity — not as a separate 'accessibility persona'. Use when creating personas, user profiles, proto-personas, or any representation of target users. Triggers on: persona, user persona, proto-persona, user profile, target user, who is the user, disability persona, accessibility persona, inclusive persona."
+layer: atomic
+function: design
 ---
 
 # Disability-Inclusive Personas

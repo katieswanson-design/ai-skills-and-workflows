@@ -1,6 +1,9 @@
 ---
 name: simplify
 description: "Simplify content and interactions to reduce cognitive load. Chains: plain-language-design, cognitive-load-assessment, focus-attention-design. Use when given content, a flow, or an interface that needs to be made more accessible."
+layer: entry
+function: design
+chains: [accessibility/plain-language-design, accessibility/cognitive-load-assessment, accessibility/focus-attention-design]
 ---
 
 # Simplify

@@ -1,6 +1,9 @@
 ---
 name: preference-audit
 description: "Audit an existing interface for respect of user preferences including motion, contrast, colour scheme, and text scaling. Chains: user-preference-respect, responsive-accessibility, colour-independence. Use when reviewing an existing product for adaptive behaviour."
+layer: entry
+function: audit
+chains: [accessibility/user-preference-respect, accessibility/responsive-accessibility, accessibility/colour-independence]
 ---
 
 # User Preference Audit

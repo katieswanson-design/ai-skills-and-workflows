@@ -1,6 +1,8 @@
 ---
 name: responsive-accessibility
 description: "Design responsive layouts that maintain accessibility across screen sizes, zoom levels, and orientations. Use when designing responsive interfaces, testing zoom behaviour, or reviewing layouts across devices. Triggers on: responsive, zoom, reflow, breakpoint, mobile accessibility, screen size, orientation, viewport, 200% zoom, text scaling, layout shift, horizontal scroll."
+layer: atomic
+function: design
 ---
 
 # Responsive Accessibility

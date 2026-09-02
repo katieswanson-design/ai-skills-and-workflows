@@ -1,6 +1,9 @@
 ---
 name: generate
 description: "Generate a diverse, inclusive persona set for a product. Chains: disability-inclusive-personas, situational-impairment-mapping, assistive-technology-scenarios, ability-spectrum-mapping. Use when creating a new persona set or expanding an existing one to be more inclusive."
+layer: entry
+function: design
+chains: [accessibility/disability-inclusive-personas, accessibility/situational-impairment-mapping, accessibility/assistive-technology-scenarios, accessibility/ability-spectrum-mapping]
 ---
 
 # Generate Inclusive Persona Set

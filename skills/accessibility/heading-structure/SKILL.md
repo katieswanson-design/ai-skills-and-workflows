@@ -1,6 +1,8 @@
 ---
 name: heading-structure
 description: "Design heading hierarchies and content structure that work for screen readers and cognitive accessibility. Use when structuring pages, articles, dashboards, forms, or any content-heavy interface. Triggers on: headings, heading hierarchy, h1 h2 h3, content structure, page structure, screen reader navigation, document outline, semantic structure, heading levels."
+layer: atomic
+function: design
 ---
 
 # Heading Structure

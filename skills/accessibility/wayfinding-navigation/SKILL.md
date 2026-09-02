@@ -1,6 +1,8 @@
 ---
 name: wayfinding-navigation
 description: "Design navigation and information architecture for cognitive accessibility. Use when designing or reviewing navigation, site maps, page hierarchies, breadcrumbs, search, multi-step flows, or any structure where users need to find content and know where they are. Triggers on: users get lost, navigation, wayfinding, information architecture, breadcrumbs, findability, site map, confusing structure, where am I."
+layer: atomic
+function: design
 ---
 
 # Wayfinding and Navigation

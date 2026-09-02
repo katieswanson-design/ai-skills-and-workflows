@@ -4,6 +4,8 @@ description: "Check a codebase or implementation for token compliance — findin
 references:
   - ../../knowledge-notes/token-architecture.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: validate
 ---
 
 # Token compliance

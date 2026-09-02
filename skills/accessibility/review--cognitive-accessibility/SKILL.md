@@ -1,6 +1,9 @@
 ---
 name: review-cognitive-accessibility
 description: "Run a full cognitive accessibility review of a flow, screen, or interface. Chains: cognitive-load-assessment, plain-language-design, wayfinding-navigation, error-prevention-recovery, focus-attention-design, memory-load-reduction."
+layer: entry
+function: audit
+chains: [accessibility/cognitive-load-assessment, accessibility/plain-language-design, accessibility/wayfinding-navigation, accessibility/error-prevention-recovery, accessibility/focus-attention-design, accessibility/memory-load-reduction]
 ---
 
 # Cognitive Accessibility Review

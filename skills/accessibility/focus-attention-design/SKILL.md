@@ -1,6 +1,8 @@
 ---
 name: focus-attention-design
 description: "Design interfaces that support sustained focus and reduce distractions. Use when designing for users with ADHD, attention difficulties, anxiety, or any context where focus matters — dashboards, reading experiences, task flows, forms, learning interfaces. Triggers on: focus, distraction, ADHD, attention, too busy, cluttered, visual noise, autoplay, notifications, pop-ups, interruptions."
+layer: atomic
+function: design
 ---
 
 # Focus and Attention Design

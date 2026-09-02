@@ -4,6 +4,8 @@ description: "Persist and recall findings across skill runs within and between s
 references:
   - ../../knowledge-notes/agent-orchestration-guide.md
   - ../../knowledge-notes/human-oversight-framework.md
+layer: atomic
+function: document
 ---
 
 # Session Memory

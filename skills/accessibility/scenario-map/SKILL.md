@@ -1,6 +1,9 @@
 ---
 name: scenario-map
 description: "Map inclusive usage scenarios across ability spectrums for a product or feature. Chains: ability-spectrum-mapping, situational-impairment-mapping, assistive-technology-scenarios. Use when planning test coverage, identifying accessibility gaps, or understanding how a feature performs across diverse users."
+layer: entry
+function: audit
+chains: [accessibility/ability-spectrum-mapping, accessibility/situational-impairment-mapping, accessibility/assistive-technology-scenarios]
 ---
 
 # Map Inclusive Usage Scenarios

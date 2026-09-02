@@ -1,6 +1,8 @@
 ---
 name: compliance-mapping
 description: "Map design decisions to accessibility standards and legal requirements. Use when documenting WCAG conformance, preparing for audits, tracking compliance status, or when legal or procurement requires accessibility documentation. Triggers on: WCAG, compliance, conformance, audit, VPAT, accessibility statement, legal requirement, ADA, EAA, European Accessibility Act, Section 508, EN 301 549, accessibility standard, success criterion."
+layer: atomic
+function: validate
 ---
 
 # Compliance Mapping

@@ -6,6 +6,8 @@ references:
   - ../../knowledge-notes/design-to-code-contract.md
   - ../../knowledge-notes/human-oversight-framework.md
   - ../../knowledge-notes/agent-orchestration-guide.md
+layer: atomic
+function: govern
 ---
 
 # Governance encoder

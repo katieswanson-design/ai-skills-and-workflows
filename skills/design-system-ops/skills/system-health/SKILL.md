@@ -9,6 +9,8 @@ references:
   - ../../knowledge-notes/agent-orchestration-guide.md
   - ../../knowledge-notes/mcp-setup-guide.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: audit
 ---
 
 # System health

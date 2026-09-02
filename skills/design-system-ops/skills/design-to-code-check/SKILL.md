@@ -4,6 +4,8 @@ description: "Check alignment between a specific design specification and its co
 references:
   - ../../knowledge-notes/design-to-code-contract.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: validate
 ---
 
 # Design-to-code check

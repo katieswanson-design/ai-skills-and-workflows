@@ -4,6 +4,8 @@ description: "Produce a design system adoption report separating coverage from a
 references:
   - ../../knowledge-notes/output-discipline.md
   - ../../knowledge-notes/adoption-measurement.md
+layer: atomic
+function: audit
 ---
 
 

@@ -3,6 +3,8 @@ name: accessibility-per-component
 description: "Run an accessibility audit on a specific design system component. Trigger when someone says: accessibility check, a11y audit, WCAG compliance, is this accessible, check accessibility, does this meet WCAG, screen reader support, keyboard navigation check, or anything about auditing the accessibility of a specific component."
 references:
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: audit
 ---
 
 # Accessibility per component

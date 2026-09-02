@@ -1,6 +1,9 @@
 ---
 name: review-accessible-content
 description: "Review content for accessibility across cognitive and literacy levels. Chains: readable-content, alt-text-design, heading-structure, link-text-design, table-accessibility, form-labelling, multimedia-accessibility. Use when auditing existing content for accessibility."
+layer: entry
+function: audit
+chains: [accessibility/readable-content, accessibility/alt-text-design, accessibility/heading-structure, accessibility/link-text-design, accessibility/table-accessibility, accessibility/form-labelling, accessibility/multimedia-accessibility]
 ---
 
 # Accessible Content Review

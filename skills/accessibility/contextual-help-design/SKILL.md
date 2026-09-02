@@ -1,6 +1,8 @@
 ---
 name: contextual-help-design
 description: "Design help systems and support patterns that work for people with cognitive disabilities. Use when designing help content, tooltips, onboarding, FAQs, support flows, documentation, or any context where users need guidance. Triggers on: help, support, FAQ, tooltip, onboarding, tutorial, guidance, stuck, confused, documentation, instructions."
+layer: atomic
+function: design
 ---
 
 # Contextual Help Design

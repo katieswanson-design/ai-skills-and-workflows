@@ -1,6 +1,8 @@
 ---
 name: cognitive-load-assessment
 description: "Assess and reduce cognitive load in interfaces, flows, and content. Use when designing or reviewing any multi-step process, complex form, dashboard, decision flow, or information-dense screen. Triggers on: cognitive load, too complex, overwhelmed, too many steps, decision fatigue, confusing, information overload, simplify this flow. Applies to any interface where users must think, decide, or remember."
+layer: atomic
+function: audit
 ---
 
 # Cognitive Load Assessment

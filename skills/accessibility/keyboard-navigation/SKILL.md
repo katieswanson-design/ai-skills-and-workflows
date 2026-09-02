@@ -1,6 +1,8 @@
 ---
 name: keyboard-navigation
 description: "Design keyboard navigation and focus management for users who cannot or prefer not to use a mouse or touch screen. Use when designing any interactive interface — forms, menus, modals, tabs, carousels, drag-and-drop, data tables, or custom components. Triggers on: keyboard, focus, tab order, focus trap, skip link, arrow keys, keyboard shortcut, can't use mouse, motor disability, switch access, focus indicator, focus ring."
+layer: atomic
+function: design
 ---
 
 # Keyboard Navigation

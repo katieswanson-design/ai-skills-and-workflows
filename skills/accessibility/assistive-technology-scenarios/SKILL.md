@@ -1,6 +1,8 @@
 ---
 name: assistive-technology-scenarios
 description: "Write usage scenarios that include assistive technology and diverse interaction methods. Use when writing scenarios, use cases, user journeys, or storyboards. Triggers on: assistive technology, AT, screen reader, switch, voice control, magnifier, braille display, head pointer, eye tracking, how people use our product, usage scenario, use case."
+layer: atomic
+function: design
 ---
 
 # Assistive Technology Scenarios

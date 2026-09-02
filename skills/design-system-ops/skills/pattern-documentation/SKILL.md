@@ -4,6 +4,8 @@ description: "Write documentation for a design system pattern — a multi-compon
 references:
   - ../../knowledge-notes/ai-readiness.md
   - ../../knowledge-notes/component-bestiary-reference.md
+layer: atomic
+function: document
 ---
 
 # Pattern documentation

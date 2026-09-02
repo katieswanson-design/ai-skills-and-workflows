@@ -1,6 +1,9 @@
 ---
 name: document
 description: "Document accessibility decisions and tradeoffs for a feature. Chains: decision-documentation, tradeoff-analysis, compliance-mapping. Use when a feature is being designed or shipped and accessibility decisions need to be captured."
+layer: entry
+function: document
+chains: [accessibility/decision-documentation, accessibility/tradeoff-analysis, accessibility/compliance-mapping]
 ---
 
 # Document Accessibility Decisions

@@ -1,6 +1,8 @@
 ---
 name: accessibility-debt-tracking
 description: "Track and manage accessibility debt — known accessibility issues that have been deferred. Use when managing a backlog of accessibility issues, planning remediation, or when accessibility problems are accumulating faster than they're being fixed. Triggers on: accessibility debt, tech debt, known issues, backlog, deferred, we'll fix it later, remediation, accessibility backlog, accumulating issues, regression."
+layer: atomic
+function: govern
 ---
 
 # Accessibility Debt Tracking

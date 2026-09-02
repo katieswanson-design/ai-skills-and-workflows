@@ -1,6 +1,8 @@
 ---
 name: plain-language-design
 description: "Write and review content for plain language accessibility. Use when writing interface copy, error messages, instructions, onboarding text, help content, legal or medical information, forms, or any user-facing text. Triggers on: plain language, reading level, simplify text, jargon, hard to understand, nobody reads this, unclear copy, rewrite, too complicated, ESL, literacy, readability."
+layer: atomic
+function: design
 ---
 
 # Plain Language Design

@@ -5,6 +5,8 @@ references:
   - ../../knowledge-notes/ai-readiness.md
   - ../../knowledge-notes/component-bestiary-reference.md
   - ../../knowledge-notes/mcp-setup-guide.md
+layer: atomic
+function: document
 ---
 
 # AI component description

@@ -4,6 +4,8 @@ description: "Audit Figma variable collections against token architecture best p
 references:
   - ../../knowledge-notes/token-architecture.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: audit
 ---
 
 # Figma variable audit

@@ -4,6 +4,8 @@ description: "Create or document a contribution workflow for a design system —
 references:
   - ../../knowledge-notes/component-governance.md
   - ../../knowledge-notes/design-to-code-contract.md
+layer: atomic
+function: govern
 ---
 
 # Contribution workflow

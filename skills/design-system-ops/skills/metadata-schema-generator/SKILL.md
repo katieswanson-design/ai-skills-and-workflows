@@ -4,6 +4,8 @@ description: "Generate structured JSON metadata schemas for design system compon
 references:
   - ../../knowledge-notes/ai-readiness.md
   - ../../knowledge-notes/component-bestiary-reference.md
+layer: atomic
+function: document
 ---
 
 # Metadata schema generator

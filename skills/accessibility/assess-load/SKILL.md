@@ -1,6 +1,9 @@
 ---
 name: assess-load
 description: "Assess cognitive load across a complete multi-step process and produce a load map. Chains: cognitive-load-assessment, memory-load-reduction, wayfinding-navigation. Use when evaluating a checkout flow, onboarding sequence, application process, or any multi-step journey."
+layer: entry
+function: audit
+chains: [accessibility/cognitive-load-assessment, accessibility/memory-load-reduction, accessibility/wayfinding-navigation]
 ---
 
 # Assess Load

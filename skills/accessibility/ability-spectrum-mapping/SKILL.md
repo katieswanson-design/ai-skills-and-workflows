@@ -1,6 +1,8 @@
 ---
 name: ability-spectrum-mapping
 description: "Map how a product or feature works across the full spectrum of human ability — not just 'can use' and 'can't use'. Use when planning accessibility coverage, identifying gaps, or communicating accessibility scope to stakeholders. Triggers on: ability spectrum, range of users, who can use this, who can't use this, accessibility coverage, accessibility scope, ability range, spectrum of needs."
+layer: atomic
+function: audit
 ---
 
 # Ability Spectrum Mapping

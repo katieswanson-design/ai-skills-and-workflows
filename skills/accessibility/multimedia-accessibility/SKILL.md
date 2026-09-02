@@ -1,6 +1,8 @@
 ---
 name: multimedia-accessibility
 description: "Design accessible video, audio, and multimedia content with captions, transcripts, and audio descriptions. Use when creating or reviewing video, audio, podcasts, webinars, animations, or any time-based media. Triggers on: captions, subtitles, transcript, audio description, video accessibility, podcast accessibility, multimedia, closed captions, sign language, media player, autoplay."
+layer: atomic
+function: design
 ---
 
 # Multimedia Accessibility

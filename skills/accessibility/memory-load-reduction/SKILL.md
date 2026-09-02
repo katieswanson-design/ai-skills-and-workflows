@@ -1,6 +1,8 @@
 ---
 name: memory-load-reduction
 description: "Design interfaces that minimise demands on working memory. Use when designing multi-step flows, dashboards, comparison tools, forms that span multiple screens, or any interface where users need to remember information across steps or sessions. Triggers on: memory, remember, forget, carry forward, multi-step, users drop off, too many steps, lose their place, context."
+layer: atomic
+function: design
 ---
 
 # Memory Load Reduction

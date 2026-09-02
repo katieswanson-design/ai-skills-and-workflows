@@ -1,6 +1,9 @@
 ---
 name: responsive-review
 description: "Review responsive and flexible layout for accessibility across devices, zoom levels, and orientations. Chains: responsive-accessibility, flexible-typography, information-density. Use when testing an existing interface across screen sizes and zoom levels for accessibility."
+layer: entry
+function: audit
+chains: [accessibility/responsive-accessibility, accessibility/flexible-typography, accessibility/information-density]
 ---
 
 # Responsive Accessibility Review

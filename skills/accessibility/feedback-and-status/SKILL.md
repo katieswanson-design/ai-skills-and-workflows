@@ -1,6 +1,8 @@
 ---
 name: feedback-and-status
 description: "Design feedback and status communication that works across senses — visual, auditory, and haptic. Use when designing loading states, success messages, progress indicators, notifications, alerts, or any system response to user action. Triggers on: feedback, status, notification, alert, loading, progress, success message, confirmation, toast, snackbar, screen reader announcement, aria-live, colour alone."
+layer: atomic
+function: design
 ---
 
 # Feedback and Status Design

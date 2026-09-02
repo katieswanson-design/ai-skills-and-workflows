@@ -1,6 +1,8 @@
 ---
 name: simplified-views
 description: "Design simplified and reduced-complexity views of interfaces for users who need less visual noise and fewer options. Use when designing settings, dashboards, complex tools, or any interface that could benefit from a simpler mode. Triggers on: simplified view, simple mode, easy mode, basic view, reduce complexity, less clutter, overwhelmed, too many options, beginner mode, essential view, focus mode."
+layer: atomic
+function: design
 ---
 
 # Simplified Views

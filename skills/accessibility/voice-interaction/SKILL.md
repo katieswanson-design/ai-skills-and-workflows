@@ -1,6 +1,8 @@
 ---
 name: voice-interaction
 description: "Design voice interactions and speech interfaces that work for people with diverse speech patterns, accents, and communication styles. Use when designing voice commands, voice search, dictation, voice assistants, or any interface that accepts speech input. Triggers on: voice, speech, dictation, voice command, voice search, speech recognition, accent, stutter, speech disability, non-verbal, AAC, voice assistant, talk to type."
+layer: atomic
+function: design
 ---
 
 # Voice Interaction Design

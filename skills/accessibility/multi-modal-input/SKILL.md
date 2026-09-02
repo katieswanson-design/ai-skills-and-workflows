@@ -1,6 +1,8 @@
 ---
 name: multi-modal-input
 description: "Design interfaces that offer multiple input methods so users can choose what works for their abilities and context. Use when designing any interactive system where users provide input — forms, search, editors, creative tools, communication interfaces. Triggers on: multi-modal, input methods, alternative input, how people interact, mouse alternative, touch alternative, input flexibility, switch access, eye tracking, head pointer."
+layer: atomic
+function: design
 ---
 
 # Multi-Modal Input Design

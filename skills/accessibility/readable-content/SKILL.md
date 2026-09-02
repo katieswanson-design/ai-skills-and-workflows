@@ -1,6 +1,8 @@
 ---
 name: readable-content
 description: "Write and structure content for diverse reading abilities and cognitive styles. Use when writing long-form content, help documentation, product descriptions, policies, terms, or any content that needs to be understood by a wide audience. Triggers on: readability, reading level, too long, too dense, wall of text, hard to read, simplify content, content accessibility, scannable, skimmable."
+layer: atomic
+function: design
 ---
 
 # Readable Content Design

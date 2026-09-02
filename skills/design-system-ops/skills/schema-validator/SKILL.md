@@ -4,6 +4,8 @@ description: "Validate token files against DTCG 2025.10, Style Dictionary, or cu
 references:
   - ../../knowledge-notes/token-architecture.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: validate
 ---
 
 # Schema validator

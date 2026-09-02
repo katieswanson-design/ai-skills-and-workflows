@@ -1,6 +1,8 @@
 ---
 name: inclusive-user-stories
 description: "Write user stories that account for disability and diverse abilities from the start. Use when writing user stories, acceptance criteria, jobs to be done, or requirements. Triggers on: user story, user stories, acceptance criteria, jobs to be done, JTBD, requirements, as a user I want, definition of done, story writing."
+layer: atomic
+function: design
 ---
 
 # Inclusive User Stories

@@ -1,6 +1,8 @@
 ---
 name: stakeholder-communication
 description: "Communicate accessibility decisions, requirements, and value to stakeholders who aren't accessibility specialists. Use when presenting accessibility work to leadership, product managers, engineers, or anyone who needs to understand why accessibility decisions matter. Triggers on: stakeholder, business case, justify accessibility, explain accessibility, leadership, executive, ROI, why accessibility, cost of accessibility, persuade, convince, accessibility presentation."
+layer: atomic
+function: communicate
 ---
 
 # Stakeholder Communication

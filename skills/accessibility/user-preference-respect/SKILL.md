@@ -1,6 +1,8 @@
 ---
 name: user-preference-respect
 description: "Design interfaces that detect and respond to system-level user preferences. Use when implementing dark mode, reduced motion, high contrast, text scaling, or any user preference that affects how the interface renders. Triggers on: user preference, system preference, prefers-reduced-motion, prefers-contrast, prefers-color-scheme, forced-colors, media query, user settings, system settings, accessibility settings, OS settings."
+layer: atomic
+function: design
 ---
 
 # User Preference Respect

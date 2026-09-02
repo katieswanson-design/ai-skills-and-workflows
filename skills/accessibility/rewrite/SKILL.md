@@ -1,6 +1,9 @@
 ---
 name: rewrite
 description: "Rewrite content in plain language while preserving meaning. Chains: readable-content, link-text-design. Use when given content that is too complex, jargon-heavy, or inaccessible for the target audience."
+layer: entry
+function: design
+chains: [accessibility/readable-content, accessibility/link-text-design]
 ---
 
 # Rewrite for Accessibility

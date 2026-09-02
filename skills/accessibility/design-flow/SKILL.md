@@ -1,6 +1,9 @@
 ---
 name: design-flow
 description: "Design an interaction flow with inclusive input and output options from the start. Chains: multi-modal-input, keyboard-navigation, touch-target-design, feedback-and-status. Use when designing a new feature, flow, or interface and you want to build inclusive interaction in from the beginning."
+layer: entry
+function: design
+chains: [accessibility/multi-modal-input, accessibility/keyboard-navigation, accessibility/touch-target-design, accessibility/feedback-and-status]
 ---
 
 # Design Inclusive Interaction Flow

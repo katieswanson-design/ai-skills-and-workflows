@@ -1,6 +1,8 @@
 ---
 name: tradeoff-analysis
 description: "Analyse accessibility tradeoffs when a design decision improves accessibility for one group but may affect another, or when accessibility competes with other requirements. Use when facing conflicting accessibility needs, business pressure to reduce accessibility scope, or technical constraints that limit accessibility options. Triggers on: tradeoff, trade-off, compromise, accessibility vs performance, accessibility vs deadline, conflicting needs, which users, who do we prioritise, can't do both, accessibility scope."
+layer: atomic
+function: audit
 ---
 
 # Accessibility Tradeoff Analysis

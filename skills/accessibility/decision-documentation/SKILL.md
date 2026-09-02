@@ -1,6 +1,8 @@
 ---
 name: decision-documentation
 description: "Document accessibility decisions and the reasoning behind them so they survive team changes, redesigns, and time. Use when making accessibility tradeoffs, choosing between approaches, or when a decision needs to be recorded for future reference. Triggers on: accessibility decision, why did we, tradeoff, decision record, ADR, architecture decision, accessibility rationale, why is it like this, document the decision, decision log."
+layer: atomic
+function: document
 ---
 
 # Accessibility Decision Documentation

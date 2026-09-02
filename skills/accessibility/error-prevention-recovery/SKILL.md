@@ -1,6 +1,8 @@
 ---
 name: error-prevention-recovery
 description: "Design error prevention, error messages, and recovery flows for cognitive accessibility. Use when designing forms, checkout flows, account creation, settings, data entry, or any flow where users can make mistakes. Triggers on: error handling, error messages, form errors, validation, users make mistakes, users abandon, error recovery, undo, forgiving design."
+layer: atomic
+function: design
 ---
 
 # Error Prevention and Recovery

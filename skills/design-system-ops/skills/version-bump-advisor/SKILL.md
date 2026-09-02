@@ -4,6 +4,8 @@ description: "Recommend the correct semver bump with reasoning and a generated c
 references:
   - ../../knowledge-notes/component-governance.md
   - ../../knowledge-notes/design-to-code-contract.md
+layer: atomic
+function: govern
 ---
 
 # Version Bump Advisor

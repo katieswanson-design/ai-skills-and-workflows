@@ -4,6 +4,8 @@ description: "Audit a design system's token definitions for naming violations, m
 references:
   - ../../knowledge-notes/token-architecture.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: audit
 ---
 
 # Token audit

@@ -5,6 +5,8 @@ references:
   - ../../knowledge-notes/documentation-coverage.md
   - ../../knowledge-notes/output-discipline.md
   - ../../knowledge-notes/adoption-measurement.md
+layer: atomic
+function: audit
 ---
 
 # Docs coverage

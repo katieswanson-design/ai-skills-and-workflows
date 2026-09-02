@@ -1,6 +1,8 @@
 ---
 name: edge-case-identification
 description: "Identify and design for edge cases that disproportionately affect users with disabilities. Use when reviewing designs for completeness, planning test cases, or when someone says 'that's an edge case.' Triggers on: edge case, corner case, that's unlikely, only a few users, exception, unusual scenario, we'll handle that later, happy path, unhappy path, error state, empty state."
+layer: atomic
+function: audit
 ---
 
 # Edge Case Identification

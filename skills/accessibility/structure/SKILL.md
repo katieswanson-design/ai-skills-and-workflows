@@ -1,6 +1,9 @@
 ---
 name: structure
 description: "Structure content for screen reader and assistive technology use. Chains: heading-structure, alt-text-design, table-accessibility, form-labelling. Use when building a new page, document, or content template and you want to get the structural accessibility right from the start."
+layer: entry
+function: design
+chains: [accessibility/heading-structure, accessibility/alt-text-design, accessibility/table-accessibility, accessibility/form-labelling]
 ---
 
 # Structure for Assistive Technology

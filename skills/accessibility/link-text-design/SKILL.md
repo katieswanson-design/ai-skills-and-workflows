@@ -1,6 +1,8 @@
 ---
 name: link-text-design
 description: "Write link text that makes sense out of context for screen reader users and improves usability for everyone. Use when writing or reviewing links, calls to action, navigation labels, or any clickable text. Triggers on: link text, click here, read more, learn more, screen reader links, link purpose, anchor text, call to action, CTA, ambiguous link."
+layer: atomic
+function: design
 ---
 
 # Link Text Design

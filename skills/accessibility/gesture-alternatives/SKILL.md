@@ -1,6 +1,8 @@
 ---
 name: gesture-alternatives
 description: "Design alternatives to gesture-based and motion-based interactions. Use when designing swipe actions, pinch-to-zoom, shake-to-undo, tilt controls, multi-finger gestures, or any interaction that requires specific physical movements. Triggers on: gesture, swipe, pinch, shake, tilt, multi-touch, two-finger, rotation gesture, device motion, accelerometer, gyroscope."
+layer: atomic
+function: design
 ---
 
 # Gesture Alternatives

@@ -7,6 +7,8 @@ references:
   - ../../knowledge-notes/agent-orchestration-guide.md
   - ../../knowledge-notes/mcp-setup-guide.md
   - ../../knowledge-notes/context-engine-blueprints.md
+layer: atomic
+function: document
 ---
 
 # Context engine builder

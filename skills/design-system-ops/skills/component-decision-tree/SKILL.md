@@ -4,6 +4,8 @@ description: "Build queryable decision trees that help agents and teams choose b
 references:
   - ../../knowledge-notes/ai-readiness.md
   - ../../knowledge-notes/component-bestiary-reference.md
+layer: atomic
+function: document
 ---
 
 # Component decision tree

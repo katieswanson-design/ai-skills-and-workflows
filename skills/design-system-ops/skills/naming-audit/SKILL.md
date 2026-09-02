@@ -3,6 +3,8 @@ name: naming-audit
 description: "Audit a design system's naming conventions across components, tokens, and patterns. Trigger when someone says: naming conventions, audit component names, are my names consistent, naming problems, naming review, inconsistent names, fix our naming, review naming, or anything about the quality or consistency of names in a design system."
 references:
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: audit
 ---
 
 # Naming audit

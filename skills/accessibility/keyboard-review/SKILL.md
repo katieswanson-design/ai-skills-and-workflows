@@ -1,6 +1,9 @@
 ---
 name: keyboard-review
 description: "Review keyboard navigation and focus management in an existing interface. Chains: keyboard-navigation, feedback-and-status. Use when testing or reviewing keyboard accessibility specifically, before a release, or when users report keyboard issues."
+layer: entry
+function: audit
+chains: [accessibility/keyboard-navigation, accessibility/feedback-and-status]
 ---
 
 # Keyboard Review

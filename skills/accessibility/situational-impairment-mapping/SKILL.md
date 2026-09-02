@@ -1,6 +1,8 @@
 ---
 name: situational-impairment-mapping
 description: "Map situational impairments that affect all users in specific contexts — not just people with permanent disabilities. Use when designing for mobile, outdoor, noisy, stressful, or multitasking contexts. Triggers on: situational, context of use, environment, one-handed, bright sunlight, noisy, driving, multitasking, gloves, temporary disability, context, edge case."
+layer: atomic
+function: audit
 ---
 
 # Situational Impairment Mapping

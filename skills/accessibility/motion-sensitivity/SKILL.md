@@ -1,6 +1,8 @@
 ---
 name: motion-sensitivity
 description: "Design for people with vestibular disorders, motion sensitivity, or seizure conditions. Use when designing animations, transitions, parallax scrolling, video backgrounds, carousels, or any moving content. Triggers on: motion, animation, vestibular, motion sickness, dizzy, nausea, parallax, autoplay, flashing, seizure, prefers-reduced-motion, spinning, scrolljacking."
+layer: atomic
+function: design
 ---
 
 # Motion Sensitivity Design

@@ -4,6 +4,8 @@ description: "Audit component APIs for consistency, breaking changes, TypeScript
 references:
   - ../../knowledge-notes/design-to-code-contract.md
   - ../../knowledge-notes/component-governance.md
+layer: atomic
+function: validate
 ---
 
 # Component API validator

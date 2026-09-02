@@ -1,6 +1,8 @@
 ---
 name: alt-text-design
 description: "Write meaningful alternative text for images, charts, diagrams, and visual content. Use when creating or reviewing alt text, image descriptions, chart summaries, or any visual content that needs a text equivalent. Triggers on: alt text, image description, alternative text, screen reader, decorative image, chart description, infographic, data visualisation, complex image, meaningful alt."
+layer: atomic
+function: design
 ---
 
 # Alt Text Design

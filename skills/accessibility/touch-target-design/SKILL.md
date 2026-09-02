@@ -1,6 +1,8 @@
 ---
 name: touch-target-design
 description: "Design touch targets and pointer interactions that work for people with motor difficulties, tremors, limited dexterity, or who use assistive pointing devices. Use when designing buttons, links, form controls, mobile interfaces, or any clickable/tappable elements. Triggers on: touch target, tap target, button size, too small to tap, fat finger, motor disability, dexterity, tremor, pointer, click area, hit area, mobile buttons."
+layer: atomic
+function: design
 ---
 
 # Touch Target Design

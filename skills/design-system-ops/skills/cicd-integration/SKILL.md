@@ -5,6 +5,8 @@ references:
   - ../../knowledge-notes/component-governance.md
   - ../../knowledge-notes/token-architecture.md
   - ../../knowledge-notes/design-to-code-contract.md
+layer: atomic
+function: validate
 ---
 
 # CI/CD Integration

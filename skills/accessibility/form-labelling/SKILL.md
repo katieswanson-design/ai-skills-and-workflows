@@ -1,6 +1,8 @@
 ---
 name: form-labelling
 description: "Design form labels, instructions, and grouping that work for screen readers and cognitive accessibility. Use when designing or reviewing forms, input fields, checkboxes, radio buttons, select menus, or any data entry interface. Triggers on: form label, label, input label, fieldset, legend, placeholder, form instructions, form group, radio group, checkbox group, required field, form accessibility."
+layer: atomic
+function: design
 ---
 
 # Form Labelling

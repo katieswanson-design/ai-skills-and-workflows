@@ -4,6 +4,8 @@ description: "Generate a pre-computed component index from a design system codeb
 references:
   - ../../knowledge-notes/ai-readiness.md
   - ../../knowledge-notes/component-governance.md
+layer: atomic
+function: document
 ---
 
 # Codebase index

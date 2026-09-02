@@ -1,6 +1,8 @@
 ---
 name: colour-independence
 description: "Design interfaces where colour is never the only way information is communicated. Use when designing status indicators, data visualisations, form validation, alerts, maps, or any content that uses colour to convey meaning. Triggers on: colour blind, color blind, colour alone, color alone, colour vision, color vision, red green, deuteranopia, protanopia, tritanopia, colour coding, status colour, chart colours, accessible colours."
+layer: atomic
+function: design
 ---
 
 # Colour Independence

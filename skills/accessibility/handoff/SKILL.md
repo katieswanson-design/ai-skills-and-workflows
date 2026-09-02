@@ -1,6 +1,9 @@
 ---
 name: accessibility-spec-handoff
 description: "Generate an accessibility decision handoff for engineering. Chains: decision-documentation, compliance-mapping, accessibility-testing-strategy. Use when a design is ready for implementation and the engineering team needs clear accessibility specifications."
+layer: entry
+function: communicate
+chains: [accessibility/decision-documentation, accessibility/compliance-mapping, accessibility/accessibility-testing-strategy]
 ---
 
 # Accessibility Decision Handoff

@@ -1,6 +1,8 @@
 ---
 name: information-density
 description: "Design interfaces where information density can be adjusted to suit different cognitive needs and preferences. Use when designing dashboards, data tables, feeds, inboxes, settings panels, or any interface with variable amounts of content. Triggers on: information density, too dense, too sparse, compact view, comfortable view, spacing, whitespace, data density, content density, crowded, breathing room."
+layer: atomic
+function: design
 ---
 
 # Information Density

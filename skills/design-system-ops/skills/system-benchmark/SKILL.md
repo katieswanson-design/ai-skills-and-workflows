@@ -7,6 +7,8 @@ references:
   - ../../knowledge-notes/ai-readiness.md
   - ../../knowledge-notes/component-bestiary-reference.md
   - ../../knowledge-notes/output-discipline.md
+layer: atomic
+function: audit
 ---
 
 # System Benchmark

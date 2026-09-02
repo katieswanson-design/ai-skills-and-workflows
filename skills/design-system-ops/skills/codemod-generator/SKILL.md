@@ -4,6 +4,8 @@ description: "Generate codemods (automated code transformation scripts) for desi
 references:
   - ../../knowledge-notes/component-governance.md
   - ../../knowledge-notes/design-to-code-contract.md
+layer: atomic
+function: design
 ---
 
 # Codemod Generator

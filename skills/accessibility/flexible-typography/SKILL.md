@@ -1,6 +1,8 @@
 ---
 name: flexible-typography
 description: "Design typography systems that adapt to user needs — scaling, spacing, and font preferences. Use when designing type systems, setting font sizes, defining line heights, or reviewing text readability across conditions. Triggers on: typography, font size, line height, letter spacing, word spacing, text scaling, dyslexia font, readable font, type scale, font units, rem, em, px, reading difficulty."
+layer: atomic
+function: design
 ---
 
 # Flexible Typography

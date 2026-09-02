@@ -1,6 +1,8 @@
 ---
 name: accessibility-testing-strategy
 description: "Plan what to test, how to test, and who should test for accessibility. Use when defining a testing approach, planning QA, setting up automated and manual testing, or deciding what level of accessibility testing a project needs. Triggers on: accessibility testing, how to test, test plan, automated testing, manual testing, screen reader testing, user testing, accessibility QA, what to test, testing strategy."
+layer: atomic
+function: govern
 ---
 
 # Accessibility Testing Strategy

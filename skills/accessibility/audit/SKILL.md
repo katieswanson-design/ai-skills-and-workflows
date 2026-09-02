@@ -1,6 +1,9 @@
 ---
 name: audit
 description: "Audit an interface for multi-modal interaction support. Chains: keyboard-navigation, touch-target-design, multi-modal-input, gesture-alternatives, feedback-and-status, motion-sensitivity. Use when reviewing an existing interface for interaction accessibility."
+layer: entry
+function: audit
+chains: [accessibility/keyboard-navigation, accessibility/touch-target-design, accessibility/multi-modal-input, accessibility/gesture-alternatives, accessibility/feedback-and-status, accessibility/motion-sensitivity]
 ---
 
 # Inclusive Interaction Audit

@@ -3,6 +3,8 @@ name: theme-audit
 description: "Audit theme coverage and consistency across a design system's semantic and component token tiers. Triggers: audit my themes, check theme coverage, are all tokens defined across themes, dark mode audit, brand variant check, do themes have parity, theme consistency check, light/dark token coverage, or anything about whether themes are complete and internally consistent. Use this when launching a new theme, after a rebrand, adopting dark mode, or when token-audit reveals tier leakage that defeats theming."
 references:
   - ../../knowledge-notes/token-architecture.md
+layer: atomic
+function: audit
 ---
 
 # Theme audit

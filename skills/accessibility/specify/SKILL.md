@@ -1,6 +1,9 @@
 ---
 name: specify
 description: "Specify adaptive behaviour for an interface. Chains: user-preference-respect, responsive-accessibility, flexible-typography, colour-independence, simplified-views, information-density. Use when designing a new interface and you want to build adaptability in from the start."
+layer: entry
+function: design
+chains: [accessibility/user-preference-respect, accessibility/responsive-accessibility, accessibility/flexible-typography, accessibility/colour-independence, accessibility/simplified-views, accessibility/information-density]
 ---
 
 # Specify Adaptive Behaviour

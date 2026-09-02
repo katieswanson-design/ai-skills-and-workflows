@@ -1,6 +1,9 @@
 ---
 name: audit-stories
 description: "Audit user stories for disability inclusion. Chains: inclusive-user-stories, edge-case-identification. Use when reviewing an existing backlog, sprint, or set of user stories to check whether they account for diverse abilities."
+layer: entry
+function: audit
+chains: [accessibility/inclusive-user-stories, accessibility/edge-case-identification]
 ---
 
 # Audit User Stories for Inclusion
