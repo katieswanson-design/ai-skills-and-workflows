@@ -1,6 +1,6 @@
 ---
 name: ux-writing
-description: Write interface copy — microcopy, error messages, empty states, and CTAs. Use when the words are the deliverable. For content structure and ownership, use `content-strategy` (ux-strategy).
+description: Write interface copy — microcopy, error messages, empty states, and CTAs. Use when the words are the deliverable. For content structure and ownership, use `product-content-strategy` (ux-strategy).
 layer: atomic
 function: design
 ---
