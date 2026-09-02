@@ -1,11 +1,13 @@
 ---
 name: ux-writing
-description: Create user-centered, accessible interface copy (microcopy) for digital products including buttons, labels, error messages, notifications, forms, onboarding, empty states, success messages, and help text. Use when writing or editing any text that appears in apps, websites, or software interfaces, designing conversational flows, establishing voice and tone guidelines, auditing product content for consistency and usability, reviewing UI strings, or improving existing interface copy. Applies UX writing best practices based on four quality standards — purposeful, concise, conversational, and clear. Includes accessibility guidelines, research-backed benchmarks (sentence length, comprehension rates, reading levels), expanded error patterns, tone adaptation frameworks, and comprehensive reference materials.
+description: Create user-centered, accessible interface copy (microcopy) for digital products including buttons, labels, error messages, notifications, forms, onboarding, empty states, success messages, and help text. Use when writing or editing any text that appears in apps, websites, or software interfaces, designing conversational flows, establishing voice and tone guidelines, auditing product content for consistency and usability, reviewing UI strings, or improving existing interface copy. Applies UX writing best practices based on four quality standards — purposeful, concise, conversational, and clear. Includes accessibility guidelines, research-backed benchmarks (sentence length, comprehension rates, reading levels), expanded error patterns, tone adaptation frameworks, and comprehensive reference materials. For content structure and ownership, use `product-content-strategy`.
 layer: atomic
 function: design
 ---
 
 # UX Writing
+
+You are an expert in writing clear, helpful interface copy that guides users and reinforces the product voice.
 
 Write clear, concise, user-centered interface copy (UX text/microcopy) for digital products and experiences. This skill provides frameworks, patterns, and best practices for creating text that helps users accomplish their goals.
 
@@ -25,7 +27,7 @@ Use this skill when:
 
 Every piece of UX text should be:
 
-1. **Purposeful** — Helps users or the business achieve goals
+1. **Purposeful** — Helps users achieve their goals. Business objectives are served through that, never ahead of it — when the two conflict, user intent wins
 2. **Concise** — Uses the fewest words possible without losing meaning
 3. **Conversational** — Sounds natural and human, not robotic
 4. **Clear** — Unambiguous, accurate, and easy to understand
@@ -45,6 +47,8 @@ Every piece of UX text should be:
 - Use plain language (7th grade reading level for general, 10th for professional)
 - Avoid jargon, idioms, and technical terms
 - Use consistent terminology throughout
+- Create and maintain a terminology dictionary — a shared artifact listing approved terms, their definitions, and the synonyms not to use
+- Consider translation and localization from the start — avoid idioms, concatenated string fragments, and copy that breaks when it expands 30% in another language
 - Choose meaningful, specific verbs
 - Avoid discriminatory or exclusionary language (gendered defaults, ableist idioms, culturally specific metaphors)
 
@@ -56,6 +60,7 @@ Every piece of UX text should be:
 
 **User-Centered**
 - Focus on user benefits, not features
+- Stay helpful over promotional — UI copy guides the task, it does not sell
 - Anticipate and answer user questions
 - Use second-person ("you") language
 - Match user's language and mental models
@@ -78,6 +83,8 @@ Apply these common patterns for interface elements.
 - **Pattern**: `[Verb] [object]` 
 - **Examples**: "Save changes", "Delete account", "View details"
 - **Avoid**: Generic labels like "OK", "Submit", "Click here"
+- **Hierarchy**: The primary CTA is the most common action — one primary per view, everything else secondary
+- **Intent**: Match user intent, not business intent
 
 ### Error Messages
 - **Purpose**: Explain problem and provide solution
@@ -141,6 +148,8 @@ Apply these common patterns for interface elements.
 - **Format**: Past tense, specific, encouraging
 - **Pattern**: `[Action] [result/benefit]`
 - **Examples**: "Changes saved", "Email sent", "Profile updated"
+- **Next steps**: Provide them if relevant — what the user can do now that the action is done
+- **Undo**: Include an undo option for reversible actions ("Message archived. Undo")
 
 ### Empty States
 - **Purpose**: Guide users when content is absent
@@ -151,8 +160,15 @@ Apply these common patterns for interface elements.
 ### Form Fields
 - **Labels**: Clear noun phrases describing input ("Email address", "Phone number")
 - **Instructions**: Verb-first, explain why information is needed
-- **Placeholder**: Use sparingly, only for standard inputs like "name@example.com"
+- **Placeholder**: Use sparingly, only for standard inputs like "name@example.com". Placeholders carry example format, not instructions — instructions belong in helper text, which stays visible while typing
 - **Helper text**: Static, on-demand, or automatic based on importance
+
+### Tooltips
+- **Purpose**: Give brief explanations for complex or unfamiliar features
+- **Format**: One sentence, sentence case, no terminal period for fragments
+- **Rule**: Explain, don't duplicate the label — a tooltip that restates its trigger earns nothing
+- **Examples**: "Applies to hours worked past 40 in a week", "Your EIN appears on IRS Form CP-575"
+- **Avoid**: Hiding information users need to complete the task — tooltips are for the optional detail, not the required one
 
 ### Notifications
 - **Purpose**: Deliver timely, valuable information
@@ -217,6 +233,8 @@ Examples:
 Voice is the consistent personality of the product. Establish voice using:
 - **Concepts**: 3-5 key brand principles/values
 - **Voice characteristics**: Descriptive adjectives for each concept
+- **Vocabulary**: The words the product does and does not use — preferred terms, banned terms, level of formality
+- **Perspective**: The stance the product speaks from — person ("you"/"we"), and whether it guides, instructs, or partners
 - **Do/Don't examples**: Concrete examples showing voice in action
 
 See references/voice-chart-template.md for creating a voice chart.
@@ -281,6 +299,9 @@ Tone is how voice adapts to specific situations. While voice remains constant, t
 
 **Onboarding**: Inviting, encouraging, concise
 - Welcome without overwhelming
+- One concept at a time
+- Action-oriented — have users do, not just read
+- Allow skipping
 - Focus on value
 - Celebrate early wins
 
@@ -300,7 +321,7 @@ Edit UX text in four phases:
 
 ### Phase 1: Purposeful
 - Does text help user achieve their goal?
-- Does text serve business objectives?
+- Does text serve business objectives without overriding the user's goal?
 - Is value to user clear?
 - Are concerns anticipated and addressed?
 
@@ -324,25 +345,30 @@ Edit UX text in four phases:
 
 ## Workflow
 
-1. **Understand context**
+1. **Write copy before designing the UI**
+   - Content-first: draft the words, then lay out the screen
+   - Copy that is retrofitted into a finished layout gets truncated to fit
+   - Let the copy tell you how much space the component actually needs
+
+2. **Understand context**
    - User goals and needs
    - Business objectives
    - Technical constraints
    - Emotional state of user
 
-2. **Draft content**
+3. **Draft content**
    - Start with conversation (what would you say?)
    - Apply appropriate pattern
    - Consider voice and tone
    - Front-load important information
 
-3. **Edit iteratively**
+4. **Edit iteratively**
    - Phase 1: Purposeful
    - Phase 2: Concise
    - Phase 3: Conversational
    - Phase 4: Clear
 
-4. **Test and measure**
+5. **Test and measure**
    - Review with team
    - Test with users when possible
    - Measure task completion, comprehension
