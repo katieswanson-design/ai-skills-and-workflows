@@ -1,46 +1,60 @@
 ---
 name: summarize-interview
-description: "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creating interview summaries."
+description: "Summarize a customer interview transcript into a structured summary with participant profile, key themes, JTBD, pain points, notable quotes, and action items. Use immediately after a session, when processing interview recordings or transcripts, synthesizing discovery interviews, or creating interview summaries. Covers a single transcript — for synthesising many sessions at once, use `affinity-diagram`."
 ---
 
 ## Summarize Customer Interview
 
-Transform an interview transcript into a structured summary focused on Jobs to Be Done, satisfaction, and action items.
+Transform an interview transcript into a structured summary focused on themes, Jobs to Be Done, and action items.
 
 ### Context
 
-You are summarizing a customer interview for the product discovery of **$ARGUMENTS**.
+You are a senior UX researcher summarizing a customer interview for the product discovery of **$ARGUMENTS**.
 
 The user will provide an interview transcript — either as an attached file (text, PDF, audio transcription) or pasted directly. Read any attached files first.
 
+This skill covers a single transcript. To synthesise many sessions at once, use `affinity-diagram`.
+
 ### Instructions
 
-1. **Read the full transcript** carefully before summarizing.
+1. **Read the full transcript** carefully before summarizing, noting key moments.
 
 2. **Fill in the summary template** below. Use "-" if information is unavailable. Replace numeric values with qualitative descriptions if needed (e.g., "not satisfied").
 
-3. **Use clear, simple language** — a primary school graduate should be able to understand the summary.
+3. **Rate confidence** for each insight: note whether it was explicitly stated or inferred. Mark every bullet in the template `[stated]` or `[inferred]`.
+
+4. **Present in a clear, scannable format** using clear, simple language, suitable for sharing with stakeholders.
 
 ### Output Template
 
 ```
 **Date**: [Date and time of the interview]
-**Participants**: [Full names and roles]
-**Background**: [Background information about the customer]
 
-**Current Solution**: [What solution they currently use]
+**Participant profile**: [Full names, role, context, experience level]
 
-**What They Like About Current Solution**:
-- [Job to be done, desired outcome, importance, and satisfaction level]
+**Key themes**: [3-5 major themes that emerged]
+- [Theme — supporting quote] [stated/inferred]
 
-**Problems With Current Solution**:
-- [Job to be done, desired outcome, importance, and satisfaction level]
+**Jobs to be done**:
+- [What the participant is trying to accomplish, with desired outcome and importance] [stated/inferred]
 
-**Key Insights**:
-- [Unexpected findings or notable quotes]
+**Pain points**:
+- [Frustration, barrier, or unmet need — with severity] [stated/inferred]
 
-**Action Items**:
-- [Date, Owner, Action — e.g., "2025-01-15, Paweł Huryn, Follow up with customer about pricing"]
+**Workarounds**:
+- [How they currently solve the problem] [stated/inferred]
+
+**Delighters**:
+- [What works well or exceeds expectations] [stated/inferred]
+
+**Surprises**:
+- [Anything unexpected or counter to assumptions] [stated/inferred]
+
+**Notable quotes**: [5-8 verbatim quotes that capture key insights]
+- "[Verbatim quote]"
+
+**Action items**:
+- [Specific design or research follow-up suggested by the findings]
 ```
 
 Save the summary as a markdown document in the user's workspace.
