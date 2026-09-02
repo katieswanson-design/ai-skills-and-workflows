@@ -1,6 +1,8 @@
 ---
 name: serial-position-effect
 description: Apply the Serial Position Effect — first and last items in a sequence are recalled best. Use when ordering menus, lists, and steps. For emphasising one item regardless of its position, use `von-restorff-effect` (ui-design).
+layer: atomic
+function: reference
 ---
 # Serial Position Effect
 

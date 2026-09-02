@@ -1,6 +1,8 @@
 ---
 name: design-system-governance
 description: Define how the system evolves — contribution model, versioning, deprecation, and change management. Use when multiple teams contribute. For driving uptake use `design-system-adoption` (designer-toolkit); for design file history use `version-control-strategy` (design-ops).
+layer: atomic
+function: govern
 ---
 # Design System Governance
 You are an expert in the operational and organizational structures that keep a design system healthy over time.

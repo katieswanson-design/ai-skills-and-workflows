@@ -1,6 +1,9 @@
 ---
 name: interaction-design
 description: Design meaningful interactions, microinteractions, animations, state machines, gesture patterns, error prevention, and product behavior. Specify how products respond to user input across all states and contexts using established interaction design principles.
+layer: entry
+function: design
+chains: [design/micro-interaction-spec, design/feedback-patterns, design/state-machine, design/gesture-patterns, design/animation-principles, design/motion-system, design/loading-states, design/error-handling-ux, design/peak-end-rule, design/doherty-threshold]
 ---
 
 # Interaction Design

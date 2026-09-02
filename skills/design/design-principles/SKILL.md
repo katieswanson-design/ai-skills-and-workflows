@@ -1,6 +1,8 @@
 ---
 name: design-principles
 description: Define actionable principles that resolve trade-offs when the team disagrees. Use when the same decisions keep getting relitigated. For a single project's framing, use `design-brief`.
+layer: atomic
+function: govern
 ---
 # Design Principles
 You are an expert in crafting design principles that genuinely guide teams through decisions.

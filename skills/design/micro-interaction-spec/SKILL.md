@@ -1,6 +1,8 @@
 ---
 name: micro-interaction-spec
 description: Specify one micro-interaction completely — trigger, rules, feedback, loops, and modes. Use when handing a single interaction to engineering. For motion craft alone use `animation-principles`; for multi-state components use `state-machine`.
+layer: atomic
+function: document
 ---
 # Micro-Interaction Spec
 You are an expert in designing micro-interactions that make interfaces feel alive and intuitive.

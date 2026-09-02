@@ -1,6 +1,8 @@
 ---
 name: component-spec
 description: Specify one component — props, states, variants, accessibility, and usage rules. Use when defining a library component. For the reusable doc scaffold use `documentation-template`; for a problem-solution pattern use `pattern-library`.
+layer: atomic
+function: document
 ---
 # Component Spec
 You are an expert in writing thorough, implementable component specifications for design systems.

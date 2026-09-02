@@ -1,6 +1,8 @@
 ---
 name: teslers-law
 description: Apply Tesler's Law — every process has irreducible complexity that someone must absorb. Use when deciding whether the product or the user carries it. For reducing apparent choice, use `hicks-law`.
+layer: atomic
+function: reference
 ---
 # Tesler's Law (Law of Conservation of Complexity)
 

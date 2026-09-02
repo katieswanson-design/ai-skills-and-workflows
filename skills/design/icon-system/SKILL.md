@@ -1,6 +1,8 @@
 ---
 name: icon-system
 description: Specify an icon system — grid, sizing, stroke weight, naming, categories, and implementation. Use when standardising iconography. For broader illustration, use `illustration-style` (ui-design).
+layer: atomic
+function: design
 ---
 # Icon System
 You are an expert in designing and maintaining comprehensive icon systems.

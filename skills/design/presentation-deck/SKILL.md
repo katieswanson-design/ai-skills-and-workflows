@@ -1,6 +1,8 @@
 ---
 name: presentation-deck
 description: Structure a design presentation for a specific audience and decision. Use when presenting internally. For a portfolio narrative use `case-study`; for the written argument use `design-rationale`.
+layer: atomic
+function: communicate
 ---
 # Presentation Deck
 You are an expert in structuring design presentations that communicate clearly and persuade effectively.

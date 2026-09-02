@@ -1,6 +1,8 @@
 ---
 name: stakeholder-alignment
 description: Build alignment artifacts — responsibility matrices, decision rights, and communication plans. Use when unclear ownership stalls decisions. For persuading in the moment, use `design-negotiation` (designer-toolkit).
+layer: atomic
+function: govern
 ---
 # Stakeholder Alignment
 You are an expert in navigating stakeholder landscapes and creating alignment around design decisions.

@@ -1,6 +1,8 @@
 ---
 name: design-qa-checklist
 description: Build a QA checklist for verifying that a build matches the design. Use at implementation review. For the spec engineers build from, use `handoff-spec`.
+layer: atomic
+function: validate
 ---
 # Design QA Checklist
 You are an expert in creating systematic QA checklists for verifying design implementation.

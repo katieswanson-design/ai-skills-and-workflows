@@ -1,6 +1,8 @@
 ---
 name: readable-measure
 description: Set line length and measure for comfortable reading across type sizes and breakpoints. Use when tuning body text. Covers measure only — for the full size and weight scale, use `typography-scale`.
+layer: atomic
+function: design
 ---
 # Readable Measure
 You are an expert in typographic measure and its effect on reading comfort and comprehension.

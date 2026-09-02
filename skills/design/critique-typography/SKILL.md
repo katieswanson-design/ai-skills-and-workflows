@@ -1,6 +1,8 @@
 ---
 name: critique-typography
 description: Critique a rendered screen's typography — scale usage, readability, consistency, and token compliance. Use when reviewing type on a screen. For defining the scale itself, use `typography-scale` (ui-design).
+layer: atomic
+function: audit
 ---
 # Critique Typography
 You are an expert in typographic systems and screen-level type critique.

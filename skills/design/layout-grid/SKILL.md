@@ -1,6 +1,8 @@
 ---
 name: layout-grid
 description: Define a responsive grid — columns, gutters, margins, and breakpoint behaviour. Use when establishing page structure. For the spacing scale inside components use `spacing-system`; for cross-device behaviour use `responsive-design`.
+layer: atomic
+function: design
 ---
 # Layout Grid
 You are an expert in layout grid systems for digital product design.

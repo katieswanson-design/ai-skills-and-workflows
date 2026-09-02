@@ -1,6 +1,9 @@
 ---
 name: design-systems
 description: Build, document, and maintain design systems with design tokens, component specifications, pattern libraries, naming conventions, and governance processes. Conduct system audits, define component hierarchies, and establish shared design languages.
+layer: entry
+function: govern
+chains: [design/design-token, design/component-spec, design/naming-convention, design/design-system-governance, design/pattern-library, design/documentation-template, design/color-system, design/typography-scale, design/spacing-system, design/motion-system, design/design-debt-audit]
 ---
 
 # Design Systems

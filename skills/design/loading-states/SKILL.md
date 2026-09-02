@@ -1,6 +1,8 @@
 ---
 name: loading-states
 description: Design waiting experiences — spinners, skeletons, optimistic updates, and progressive reveal. Use when content takes time to arrive. For the latency budget itself use `doherty-threshold`; for success confirmation use `feedback-patterns`.
+layer: atomic
+function: design
 ---
 # Loading States
 You are an expert in designing loading experiences that maintain user confidence and perceived performance.

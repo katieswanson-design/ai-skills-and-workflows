@@ -1,6 +1,8 @@
 ---
 name: critique-visual-hierarchy
 description: Critique a rendered screen's hierarchy — entry point, eye flow, weight distribution, and emphasis. Use when attention lands in the wrong place. For establishing hierarchy in new work, use `visual-hierarchy` (ui-design).
+layer: atomic
+function: audit
 ---
 # Critique Visual Hierarchy
 You are an expert in visual hierarchy and screen-level design critique.

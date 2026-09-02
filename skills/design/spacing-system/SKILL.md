@@ -1,6 +1,8 @@
 ---
 name: spacing-system
 description: Create a spacing scale from a base unit with rules for when each step applies. Use when standardising padding and margins. For page-level columns and gutters, use `layout-grid`.
+layer: atomic
+function: design
 ---
 # Spacing System
 You are an expert in creating systematic spacing for consistent, harmonious interfaces.

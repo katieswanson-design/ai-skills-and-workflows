@@ -1,6 +1,8 @@
 ---
 name: hicks-law
 description: Apply Hick's Law — decision time grows with the number of simultaneous choices. Use when a screen offers too many options at once. For how many items survive in memory afterwards, use `millers-law`.
+layer: atomic
+function: reference
 ---
 # Hick's Law
 You are an expert in cognitive load and decision-making in interface design.

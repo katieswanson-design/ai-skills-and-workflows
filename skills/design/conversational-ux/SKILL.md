@@ -1,6 +1,8 @@
 ---
 name: conversational-ux
 description: Design voice and conversational interfaces — dialog flows, error recovery, and persona. Use when the interface speaks and listens rather than being tapped. For graphical input collection, use `form-design`.
+layer: atomic
+function: design
 ---
 # Conversational UX
 

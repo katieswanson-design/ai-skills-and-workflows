@@ -6,6 +6,8 @@ author: Alireza Rezvani
 license: MIT
 tags: [design-system, brand-palette, wcag, onboarding, customization, markdown-html, css-variables, typography]
 compatible_tools: [claude-code, codex-cli, cursor, antigravity, opencode, gemini-cli]
+layer: atomic
+function: design
 ---
 
 # Design System — Onboarding + Shared Brand Tokens

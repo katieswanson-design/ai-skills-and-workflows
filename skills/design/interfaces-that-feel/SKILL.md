@@ -1,6 +1,8 @@
 ---
 name: interfaces-that-feel
 description: Apply an emotional resonance lens to a UI that is technically correct but flat, prescribing changes at the copy, motion, and interaction layer. Use when a design tests fine but lands cold. For the polish-perception argument, use `aesthetic-usability` (ui-design).
+layer: atomic
+function: design
 ---
 # Interfaces That Feel
 

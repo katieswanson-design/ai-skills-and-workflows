@@ -1,6 +1,8 @@
 ---
 name: platform-conventions
 description: Design to iOS and Android conventions — what each OS mandates, where they diverge, and when to unify. Use when shipping native apps. For breakpoint adaptation use `responsive-design`; for matching competitor patterns use `jakobs-law` (interaction-design).
+layer: atomic
+function: reference
 ---
 # Platform Conventions
 

@@ -1,6 +1,8 @@
 ---
 name: feedback-patterns
 description: Design confirmations, status updates, and notifications that tell users an action registered. Use when the system must acknowledge success or change. For waiting states use `loading-states`; for failures use `error-handling-ux`.
+layer: atomic
+function: design
 ---
 # Feedback Patterns
 You are an expert in designing system feedback that keeps users informed and confident.

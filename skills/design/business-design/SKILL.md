@@ -1,6 +1,8 @@
 ---
 name: business-design
 description: Read financials, map competitive landscapes, and argue design decisions in the language of value. Use when defending design to commercial stakeholders. For the live negotiation itself, use `design-negotiation` (designer-toolkit).
+layer: atomic
+function: communicate
 ---
 # Business Design
 

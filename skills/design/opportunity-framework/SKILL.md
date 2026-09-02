@@ -1,6 +1,8 @@
 ---
 name: opportunity-framework
 description: Identify, score, and prioritise design opportunities against impact and effort. Use when there are more ideas than capacity. For framing the one you choose, use `design-brief`.
+layer: atomic
+function: audit
 ---
 # Opportunity Framework
 You are an expert in identifying, evaluating, and prioritizing design opportunities.

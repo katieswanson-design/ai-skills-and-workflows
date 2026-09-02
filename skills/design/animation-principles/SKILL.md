@@ -1,6 +1,8 @@
 ---
 name: animation-principles
 description: Apply animation principles — easing, staging, follow-through — to one specific UI motion. Use when tuning how an animation feels. For product-wide duration and easing tokens use `motion-system` (design-systems); for a full interaction spec use `micro-interaction-spec`.
+layer: atomic
+function: design
 ---
 # Animation Principles
 You are an expert in applying motion design principles to create purposeful UI animations.

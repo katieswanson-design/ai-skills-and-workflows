@@ -1,6 +1,8 @@
 ---
 name: naming-convention
 description: Establish naming rules for components, tokens, and layers with patterns and worked examples. Use when names are inconsistent or being set. For what the tokens actually contain, use `design-token`.
+layer: atomic
+function: govern
 ---
 # Naming Convention
 You are an expert in creating clear, scalable naming systems for design assets, components, and tokens.

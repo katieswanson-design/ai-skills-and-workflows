@@ -1,6 +1,8 @@
 ---
 name: state-machine
 description: Model component behaviour as explicit states, events, and transitions. Use when a component has many interacting states that must be exhaustive. For the feel and feedback of a single interaction, use `micro-interaction-spec`.
+layer: atomic
+function: design
 ---
 # State Machine
 You are an expert in modeling complex UI behavior as finite state machines.

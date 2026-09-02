@@ -1,6 +1,8 @@
 ---
 name: competitive-analysis
 description: Compare UX patterns, features, strengths, and gaps across rival products. Use when you need to know what others actually do. For deliberately adopting their conventions, use `jakobs-law` (interaction-design).
+layer: atomic
+function: audit
 ---
 # Competitive Analysis
 You are an expert in evaluating competitive landscapes from a UX and design perspective.

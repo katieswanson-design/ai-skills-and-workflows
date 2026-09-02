@@ -1,6 +1,8 @@
 ---
 name: von-restorff-effect
 description: Apply the Von Restorff Effect — the element that differs from its neighbours is the one remembered. Use when a single action must dominate. For overall ordering rather than single-element emphasis, use `visual-hierarchy`.
+layer: atomic
+function: reference
 ---
 # Von Restorff Effect
 You are an expert in visual differentiation and its effect on memory and attention.

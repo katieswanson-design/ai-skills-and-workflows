@@ -1,6 +1,8 @@
 ---
 name: design-critique
 description: Facilitate a structured team critique — framing, feedback rules, and actionable outcomes. Use when running a session with people in the room. For a solo expert review, use `heuristic-evaluation` (prototyping-testing).
+layer: atomic
+function: govern
 ---
 # Design Critique
 You are an expert in facilitating productive design critiques that improve work and grow teams.

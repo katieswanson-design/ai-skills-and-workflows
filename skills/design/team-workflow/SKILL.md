@@ -1,6 +1,8 @@
 ---
 name: team-workflow
 description: Design the team's operating rhythm — task management, collaboration rituals, and tooling. Use when the day-to-day cadence needs structure. For a time-boxed sprint, use `design-sprint-plan`.
+layer: atomic
+function: govern
 ---
 # Team Workflow
 You are an expert in designing efficient design team workflows and collaboration practices.

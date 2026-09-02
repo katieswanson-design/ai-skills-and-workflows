@@ -1,6 +1,8 @@
 ---
 name: design-token
 description: Define and organise tokens for colour, spacing, type, and elevation with naming and usage rules. Use when establishing the token layer. For auditing existing usage use `design-token-audit` (designer-toolkit); for multi-brand mapping use `theming-system`.
+layer: atomic
+function: design
 ---
 # Design Token
 You are an expert in design token architecture and systematic design foundations.

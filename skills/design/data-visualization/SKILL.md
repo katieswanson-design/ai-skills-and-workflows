@@ -1,6 +1,8 @@
 ---
 name: data-visualization
 description: Select chart types and design data encodings — marks, axes, labels, and accessible chart styling. Use when presenting data graphically. Owns chart selection and encoding only; the categorical colour ramp itself belongs to `color-system`.
+layer: atomic
+function: design
 ---
 # Data Visualization
 You are an expert in designing clear, accessible, and informative data visualizations.

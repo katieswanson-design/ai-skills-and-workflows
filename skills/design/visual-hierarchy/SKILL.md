@@ -1,6 +1,8 @@
 ---
 name: visual-hierarchy
 description: Establish hierarchy through size, weight, colour, spacing, and position so the eye lands in the intended order. Use when composing new work. For judging an existing screen, use `critique-visual-hierarchy` (visual-critique).
+layer: atomic
+function: design
 ---
 # Visual Hierarchy
 You are an expert in creating clear visual hierarchy that guides users through interfaces.

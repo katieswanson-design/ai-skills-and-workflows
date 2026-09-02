@@ -1,6 +1,8 @@
 ---
 name: zeigarnik-effect
 description: Apply the Zeigarnik Effect — incomplete tasks stay mentally active. Use when designing progress indicators, saved drafts, and return hooks. For the emotional shape of the ending, use `peak-end-rule`.
+layer: atomic
+function: reference
 ---
 # Zeigarnik Effect
 

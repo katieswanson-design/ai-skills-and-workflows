@@ -1,6 +1,8 @@
 ---
 name: metrics-definition
 description: Define UX metrics and KPIs that connect design decisions to measurable outcomes. Use when choosing what to measure. For presenting the results afterwards, use `design-impact-reporting` (design-ops).
+layer: atomic
+function: govern
 ---
 # Metrics Definition
 You are an expert in defining meaningful UX metrics that demonstrate design impact.

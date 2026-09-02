@@ -1,6 +1,8 @@
 ---
 name: handoff-spec
 description: Write the implementation handoff — measurements, behaviours, assets, states, and edge cases. Use when engineering picks up the work. For verifying the result afterwards use `design-qa-checklist`; for reusable library components use `component-spec` (design-systems).
+layer: atomic
+function: document
 ---
 # Handoff Spec
 You are an expert in creating clear, complete developer handoff specifications.

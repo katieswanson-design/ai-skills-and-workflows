@@ -1,6 +1,8 @@
 ---
 name: law-of-similarity
 description: Apply the Law of Similarity — shared colour, shape, or size signals that elements belong to one category. Use when signalling relationships across distance. For grouping by position, use `law-of-proximity`.
+layer: atomic
+function: reference
 ---
 # Law of Similarity
 

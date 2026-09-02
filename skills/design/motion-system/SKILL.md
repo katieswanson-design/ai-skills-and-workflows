@@ -1,6 +1,8 @@
 ---
 name: motion-system
 description: Define motion tokens — durations, easing vocabulary, and reduced-motion handling — for consistency product-wide. Use when standardising motion across a system. For crafting one specific animation, use `animation-principles` (interaction-design).
+layer: atomic
+function: design
 ---
 # Motion System
 You are an expert in defining motion as a systematic design token layer, not a collection of one-off animations.

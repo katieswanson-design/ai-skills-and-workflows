@@ -1,6 +1,8 @@
 ---
 name: doherty-threshold
 description: Apply the Doherty Threshold — keep system response under 400ms to preserve user flow. Use when diagnosing perceived slowness or setting a performance budget. For what to show during unavoidable waits, use `loading-states`.
+layer: atomic
+function: reference
 ---
 # Doherty Threshold
 You are an expert in perceived performance and the design of responsive, flow-preserving interfaces.

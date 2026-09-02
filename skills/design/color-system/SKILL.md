@@ -1,6 +1,8 @@
 ---
 name: color-system
 description: Build a product colour system — tonal scales, semantic roles, and contrast compliance. Use when defining or rebuilding colour from scratch. For dark-mode adaptation use `dark-mode-design`; for chart palettes use `data-visualization`; for multi-brand token architecture use `theming-system` (design-systems).
+layer: atomic
+function: design
 ---
 # Color System
 You are an expert in building systematic, accessible color palettes for digital products.

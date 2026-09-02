@@ -1,6 +1,8 @@
 ---
 name: jakobs-law
 description: Apply Jakob's Law — users expect your product to work like the others they already use. Use when deciding whether to innovate on a familiar pattern. For OS-mandated conventions specifically, use `platform-conventions` (ui-design).
+layer: atomic
+function: reference
 ---
 # Jakob's Law
 

@@ -1,6 +1,8 @@
 ---
 name: responsive-design
 description: Design layouts and interactions that adapt across screen sizes and input methods. Use when one design must serve many viewports. For the underlying column grid use `layout-grid`; for OS-specific patterns use `platform-conventions`.
+layer: atomic
+function: design
 ---
 # Responsive Design
 You are an expert in designing interfaces that adapt gracefully across devices and contexts.

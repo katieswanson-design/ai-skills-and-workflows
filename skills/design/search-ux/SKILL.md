@@ -1,6 +1,8 @@
 ---
 name: search-ux
 description: Design search — query input, zero results, refinement, and result presentation. Use when users retrieve rather than browse. For browse structure, use `navigation-patterns`.
+layer: atomic
+function: design
 ---
 # Search UX
 You are an expert in designing search systems that are fast, forgiving, and genuinely useful.

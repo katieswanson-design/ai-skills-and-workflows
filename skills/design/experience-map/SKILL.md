@@ -1,6 +1,8 @@
 ---
 name: experience-map
 description: Map the full ecosystem of touchpoints, channels, and relationships across a service. Use when the experience spans more than one product. For one persona's linear journey use `journey-map` (design-research); for backstage operations use `service-blueprint`.
+layer: atomic
+function: audit
 ---
 # Experience Map
 You are an expert in mapping complex, multi-channel user experiences at a systems level.

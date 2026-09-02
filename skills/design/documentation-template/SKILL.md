@@ -1,6 +1,8 @@
 ---
 name: documentation-template
 description: Generate a reusable documentation scaffold for components, patterns, or guidelines. Use when standardising how the system is documented. For the content of one component's spec, use `component-spec`.
+layer: atomic
+function: document
 ---
 # Documentation Template
 You are an expert in creating consistent documentation structures for design systems.
