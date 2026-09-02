@@ -7,7 +7,7 @@ license: MIT
 tags: [design-system, brand-palette, wcag, onboarding, customization, markdown-html, css-variables, typography]
 compatible_tools: [claude-code, codex-cli, cursor, antigravity, opencode, gemini-cli]
 layer: atomic
-function: design
+function: govern
 ---
 
 # Design System — Onboarding + Shared Brand Tokens
@@ -26,7 +26,7 @@ All three are stdlib-only and contain no LLM calls (deterministic per Path-B dis
 
 | Symptom | Action |
 |---|---|
-| User says "convert this markdown to HTML" for the first time in this workspace | Run `python3 markdown-html/skills/design-system/scripts/onboard.py` |
+| User says "convert this markdown to HTML" for the first time in this workspace | Run `python3 skills/engineering/design-system/scripts/onboard.py` |
 | `~/.config/markdown-html/design-system.json` doesn't exist OR `setup_completed_at` is null | Refuse conversion, surface onboarding |
 | User wants per-repo brand override | `python3 .../onboard.py --scope project` |
 | User wants to change a single field non-interactively | `python3 .../onboard.py --set brand.primary=#FF6B35` |
@@ -90,7 +90,7 @@ One question per turn, recommended answer, canon citation.
 
 ```bash
 # First-run onboarding (interactive, walks all 10 questions)
-python3 markdown-html/skills/design-system/scripts/onboard.py
+python3 skills/engineering/design-system/scripts/onboard.py
 
 # Zero-touch defaults for CI / first-test
 python3 .../onboard.py --defaults

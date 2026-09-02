@@ -227,7 +227,7 @@ Design systems, UI, handoff, interaction, writing.
 
 | Skill | Description | Upstream path |
 |---|---|---|
-| ★ [design-system](vendor/design/design-system/SKILL.md) | Captures the user's brand identity once via a 10-question onboarding wizard (primary/accent HEX + heading + body Google Fonts + design style editorial/technical/minimal/playful + default output directory + syntax theme + TOC behavior + optional logo/company), validates body-text and link contrast… | [`markdown-html/skills/design-system/SKILL.md`](https://github.com/alirezarezvani/claude-skills/blob/main/markdown-html/skills/design-system/SKILL.md) |
+| ★ [design-system](vendor/engineering/design-system/SKILL.md) | Captures the user's brand identity once via a 10-question onboarding wizard (primary/accent HEX + heading + body Google Fonts + design style editorial/technical/minimal/playful + default output directory + syntax theme + TOC behavior + optional logo/company), validates body-text and link contrast… | [`markdown-html/skills/design-system/SKILL.md`](https://github.com/alirezarezvani/claude-skills/blob/main/markdown-html/skills/design-system/SKILL.md) |
 | ★ [ui-design-system](vendor/design/ui-design-system/SKILL.md) | UI design system toolkit for Senior UI Designer including design token generation, component documentation, responsive design calculations, and developer handoff tools. | [`product-team/skills/ui-design-system/SKILL.md`](https://github.com/alirezarezvani/claude-skills/blob/main/product-team/skills/ui-design-system/SKILL.md) |
 
 ### Owl-Listener/designer-skills

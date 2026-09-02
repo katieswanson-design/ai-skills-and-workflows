@@ -28,7 +28,7 @@ This orchestrator forks context, classifies the input markdown deterministically
 ## Pre-flight gates (hard refusals)
 
 1. **Below the 100-line threshold.** Markdown wins below 100 lines (Shihipar). The classifier prints `below_min_lines: true` and `route_explainer.py` refuses. Tell the user to keep their input as markdown.
-2. **Design-system not onboarded.** If `~/.config/markdown-html/design-system.json` doesn't exist (or its `setup_completed_at` is null), refuse. Point the user at `python3 markdown-html/skills/design-system/scripts/onboard.py` (or `--defaults` for a zero-touch run).
+2. **Design-system not onboarded.** If `~/.config/markdown-html/design-system.json` doesn't exist (or its `setup_completed_at` is null), refuse. Point the user at `python3 skills/engineering/design-system/scripts/onboard.py` (or `--defaults` for a zero-touch run).
 3. **Unwritable save location.** `output_path_resolver.py` refuses if the configured `default_output_dir` (or `--out` override) isn't writable.
 
 ## Routing logic (deterministic)
@@ -60,7 +60,7 @@ python3 markdown-html/skills/markdown-html-orchestrator/scripts/doctype_classifi
 If the user has never run onboarding, surface the one-time setup:
 
 ```bash
-python3 markdown-html/skills/design-system/scripts/onboard.py
+python3 skills/engineering/design-system/scripts/onboard.py
 ```
 
 Ten questions, 1-2 minutes. Captures brand primary + accent + heading/body Google Fonts + design style (editorial/technical/minimal/playful) + default output dir + syntax theme + TOC behavior + optional logo/company. Stored at `~/.config/markdown-html/design-system.json`. Re-runnable with `--scope project` for per-repo overrides.
