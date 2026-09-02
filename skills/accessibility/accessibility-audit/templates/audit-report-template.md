@@ -35,7 +35,8 @@
 | High | _ | _% |
 | Moderate | _ | _% |
 | Low | _ | _% |
-| **Total** | **_** | **100%** |
+| **Total violations** | **_** | **100%** |
+| Enhancement (not a violation) | _ | — |
 
 ### By WCAG Principle
 
@@ -59,7 +60,7 @@
 
 ### Finding 1: [Issue title]
 
-**Severity:** Critical / High / Moderate / Low
+**Severity:** Critical / High / Moderate / Low / Enhancement
 **WCAG Criterion:** [Number] — [Name] (Level [A/AA/AAA])
 **Principle:** Perceivable / Operable / Understandable / Robust
 **Location:** [Page, component, or element where the issue occurs]
@@ -89,7 +90,7 @@
 
 ### Finding 2: [Issue title]
 
-**Severity:** Critical / High / Moderate / Low
+**Severity:** Critical / High / Moderate / Low / Enhancement
 **WCAG Criterion:** [Number] — [Name] (Level [A/AA/AAA])
 **Principle:** Perceivable / Operable / Understandable / Robust
 **Location:** [Page, component, or element]
@@ -131,11 +132,13 @@
 | 4 | [Finding title] | [Criterion] | Moderate | Medium | 2 | [Team] |
 | 5 | [Finding title] | [Criterion] | Low | Small | 2 | [Team] |
 | 6 | [Finding title] | [Criterion] | Low | Large | 3 | [Team] |
+| 7 | [Finding title] | n/a — no violation | Enhancement | Small | 4 | [Team] |
 
 **Tier definitions:**
 - **Tier 1:** Fix before next release — Critical/High severity or Level A violations
 - **Tier 2:** Fix within current quarter — Moderate severity or Level AA violations
 - **Tier 3:** Add to backlog — Low severity or Level AAA aspirational improvements
+- **Tier 4:** Optional — Enhancements. Not violations; schedule only once Tiers 1-3 are clear
 
 ---
 

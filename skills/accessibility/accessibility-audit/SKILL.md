@@ -1,6 +1,6 @@
 ---
 name: accessibility-audit
-description: Conduct accessibility audits against WCAG 2.2 guidelines. Evaluate pages, components, and flows for conformance at A, AA, and AAA levels. Identify issues, assess severity, provide code fixes, and generate audit reports. Covers automated testing, manual testing, keyboard navigation, screen reader compatibility, color contrast, and semantic HTML.
+description: Conduct accessibility audits against WCAG 2.2 guidelines. Evaluate pages, components, and flows for conformance at A, AA, and AAA levels. Identify issues, assess severity, provide code fixes, and generate audit reports. Covers automated testing, manual testing, keyboard navigation, screen reader compatibility, color contrast, and semantic HTML. Use when you have a design or build to assess now. Not for planning future sessions with assistive-technology users — use `accessibility-test-plan`.
 layer: atomic
 function: audit
 ---
@@ -48,6 +48,14 @@ Accessibility is not a feature — it is a baseline quality requirement. Good ac
 ### The 5-Layer Audit Process
 
 Run these layers in order. Each layer catches different types of issues.
+
+**Before Layer 1, fix your test matrix.** Audit across devices and browsers — accessibility bugs are frequently engine-specific, and a pass on one combination is not a pass. At minimum cover:
+
+- One Chromium browser and one non-Chromium browser (Safari or Firefox); screen reader behaviour differs sharply between engines.
+- One desktop and one mobile/touch context — target size, drag alternatives, reflow, and virtual-keyboard behaviour only fail on real touch devices.
+- The screen reader normally paired with each platform (VoiceOver/Safari on macOS and iOS, NVDA or JAWS/Chrome or Firefox on Windows, TalkBack/Chrome on Android).
+
+Record the combinations you actually tested in the **Browsers/devices** field of `templates/audit-report-template.md`, and scope every finding to the combinations where you reproduced it.
 
 #### Layer 1: Automated Scan (10 minutes)
 
@@ -142,6 +150,16 @@ Test complete user flows, not just individual pages.
 - [ ] Media: Do videos have captions? Audio-only has transcripts?
 - [ ] Motion: Can animations be paused? Is `prefers-reduced-motion` respected?
 
+### Testing With Disabled Users
+
+The five layers above are expert inspection. They find conformance failures; they do not tell you whether the product is actually usable. **Include users with disabilities in the audit itself wherever possible** — as participants, not as a review step after the findings are written.
+
+- **Recruit for the barriers you are auditing**: daily screen reader users, keyboard-only users, voice-control and switch users, people with low vision using magnification, and people with cognitive or attention differences.
+- **Watch real tasks, not the checklist**: give participants the same flows you tested in Layer 5 and observe where they stall, backtrack, or abandon.
+- **Pay participants** at professional usability-testing rates. This is expertise, not a favour.
+- **Let their experience outrank your severity call**: an issue that a participant could not work around is Critical regardless of how the automated scan graded it. A technically-conformant flow that no participant completed is still a finding — log it, cite the criterion it stresses, and say plainly that conformance passed and usability did not.
+- **When participants are unavailable**, say so in the report rather than letting expert inspection stand in silently for lived experience.
+
 ---
 
 ## Severity Scoring
@@ -156,6 +174,9 @@ Score each issue to prioritize fixes.
 | **High** | Significantly impairs use. Major frustration. | Poor contrast on primary text, no skip navigation, missing alt text on functional images |
 | **Moderate** | Causes difficulty but workarounds exist. | Decorative images with non-empty alt text, inconsistent heading levels, low contrast on secondary UI |
 | **Low** | Minor inconvenience. Best practice violation. | Missing lang on inline foreign text, suboptimal ARIA usage |
+| **Enhancement** | **Not a violation.** Conformance already passes; this improves the experience beyond what WCAG requires. | Raising body text to 7:1 (AAA) where 4.5:1 already passes, adding skip-to-section links to a long article that already has a skip link |
+
+**Enhancement is not a failure.** Never count Enhancements toward a conformance total, never let one block a release, and never report one as a WCAG violation. Track them so good ideas surfaced during the audit are not lost — not to inflate the issue count.
 
 ### WCAG Level as Priority Signal
 
@@ -164,6 +185,7 @@ Score each issue to prioritize fixes.
 | **A violations** | Critical or High — these are the floor |
 | **AA violations** | High or Moderate — the standard target |
 | **AAA violations** | Moderate or Low — aspirational improvements |
+| **No violation** | Enhancement — beyond-compliance improvement, scheduled only after conformance work |
 
 ### Triage Framework
 
@@ -172,6 +194,7 @@ Score each issue to prioritize fixes.
 | **Tier 1** | Critical/High + Level A or AA | Fix immediately — before next release |
 | **Tier 2** | Moderate + Level AA | Fix in current or next sprint |
 | **Tier 3** | Low + Level AAA or best practice | Add to backlog |
+| **Tier 4** | Enhancement — no violation | Optional. Schedule only once Tiers 1-3 are clear |
 
 ---
 
