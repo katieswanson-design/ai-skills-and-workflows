@@ -1,5 +1,5 @@
 ---
-name: design-critique
+name: critique-facilitation
 description: Facilitate a structured team critique — framing, feedback rules, and actionable outcomes. Use when running a session with people in the room. For a solo expert review, use `heuristic-evaluation` (prototyping-testing).
 layer: atomic
 function: govern

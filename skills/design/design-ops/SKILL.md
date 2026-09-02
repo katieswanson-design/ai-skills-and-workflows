@@ -3,7 +3,7 @@ name: design-ops
 description: Run design sprints, manage handoff, establish team rituals, documentation standards, and design QA processes. Covers the operational side of design — how teams organize work, collaborate with engineering, and ship quality.
 layer: entry
 function: govern
-chains: [design/design-sprint-plan, design/handoff-spec, design/team-workflow, design/design-critique--designer-skills, design/naming-convention, design/version-control-strategy, design/design-qa-checklist, design/design-review-process]
+chains: [design/design-sprint-plan, design/handoff-spec, design/team-workflow, design/critique-facilitation, design/naming-convention, design/version-control-strategy, design/design-qa-checklist, design/design-review-process]
 ---
 
 # Design Ops & Handoff
