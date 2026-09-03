@@ -1,6 +1,6 @@
 ---
 name: design-review-process
-description: Establish review gates — criteria, checkpoints, and approval flow. Use when work ships without consistent review. For running one individual session, use `design-critique`.
+description: Establish review gates — criteria, checkpoints, and approval flow. Use when work ships without consistent review. For running one individual session, use `critique-facilitation`.
 layer: atomic
 function: govern
 ---

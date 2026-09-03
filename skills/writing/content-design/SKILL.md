@@ -74,8 +74,8 @@ Apply these common patterns for interface elements.
 - **Format**: Noun phrases. **Page titles, modal/dialog titles, and menu/navigation items use title case** (see Capitalization below for title-case mechanics). **Lower-level headings (H3+), figure captions, callouts, and table titles use sentence case.**
 - **Types**: Brand titles, content titles, category titles, task titles
 - **Examples**:
-  - Page title (title case): "Account Settings", "Your Library", "Run Payroll"
-  - Lower-level heading (sentence case): "Recent activity", "Bank account details", "Tax withholdings"
+  - Page title (title case): "Account Settings", "Your Library", "Export Data"
+  - Lower-level heading (sentence case): "Recent activity", "Billing details", "Storage usage"
 
 ### Buttons and Links
 - **Purpose**: Enable users to take action
@@ -167,7 +167,7 @@ Apply these common patterns for interface elements.
 - **Purpose**: Give brief explanations for complex or unfamiliar features
 - **Format**: One sentence, sentence case, no terminal period for fragments
 - **Rule**: Explain, don't duplicate the label — a tooltip that restates its trigger earns nothing
-- **Examples**: "Applies to hours worked past 40 in a week", "Your EIN appears on IRS Form CP-575"
+- **Examples**: "Applies to files larger than 100 MB", "Your API key appears under Settings → Developer"
 - **Avoid**: Hiding information users need to complete the task — tooltips are for the optional detail, not the required one
 
 ### Notifications
@@ -182,7 +182,7 @@ Apply these common patterns for interface elements.
 
 - **Sentence case** (default): Body text, descriptions, helper text, error messages, success messages, tooltips, placeholder text, **button labels**, lower-level (H3+) headings, figure captions, callouts, table titles
 - **Title case**: Page titles, modal/dialog titles, menu and navigation items, form field labels
-- **All-caps**: Reserved for **short overline / eyebrow labels** (≤3 words) that sit above a heading or metric — e.g., stat-card section headers like `EMPLOYEES`, `TOTAL PAY`, `LAST UPDATED`, category tags over KPI values — and for **acronyms** (`PDF`, `URL`, `API`, `EIN`, `SSN`). Trimble's own product surfaces use this treatment for short category overlines; it's an intentional typographic signal, not shouting. **Do not** use all-caps for prose, button labels, error messages, page titles, tabs/menu labels, or any string longer than ~3 words — beyond that length readability drops sharply and it reads as shouting.
+- **All-caps**: Reserved for **short overline / eyebrow labels** (≤3 words) that sit above a heading or metric — e.g., stat-card section headers like `PROJECTS`, `TOTAL STORAGE`, `LAST UPDATED`, category tags over KPI values — and for **acronyms** (`PDF`, `URL`, `API`, `CSV`, `SSO`). This is an intentional typographic signal, not shouting. **Do not** use all-caps for prose, button labels, error messages, page titles, tabs/menu labels, or any string longer than ~3 words — beyond that length readability drops sharply and it reads as shouting.
 
 **Title case mechanics** (applies wherever title case is used):
 
@@ -197,15 +197,15 @@ Apply these common patterns for interface elements.
 - Do **not** capitalize prepositions (e.g., "in", "on", "at", "by", "of", "with") unless first or last in the title.
 
 Examples:
-- "Run Payroll for the Pay Period"
-- "Add a New Employee"
-- "How to File Quarterly Taxes"
+- "Export Data for the Current Period"
+- "Add a New Team Member"
+- "How to Archive a Project"
 
-**Lista interpretations of edge cases:**
+**Edge cases:**
 
-- **"Coming soon"** is the canonical future-feature label everywhere it appears (badges, callouts, copy). Even when used in a title-cased context, write it sentence case per the `lista-ui-conventions` rule. Do not expose milestone granularity ("Coming at Beta", "Coming at GA") in user-facing strings.
-- **Dropdown action items** (imperative-verb items inside a button-triggered menu, e.g. `"Add employee"`, `"See payroll runs"`, `"Export report"`) are treated as **buttons → sentence case**, not as static navigation menu items. Prism's "menu items use title case" rule applies to **navigational** menus (side nav, breadcrumbs, top-level nav links pointing to pages), not action menus.
-- **Buttons that reference a named page** (e.g. `"Go to Setup Wizard"`, `"Back to Payroll Hub"`, `"Open Time Review"`) **preserve the page name's title case** while the surrounding button copy stays sentence case. The page name is a proper noun in this context.
+- **"Coming soon"** is the canonical future-feature label everywhere it appears (badges, callouts, copy). Even when used in a title-cased context, write it sentence case. Do not expose milestone granularity ("Coming at Beta", "Coming at GA") in user-facing strings.
+- **Dropdown action items** (imperative-verb items inside a button-triggered menu, e.g. `"Add member"`, `"See recent activity"`, `"Export report"`) are treated as **buttons → sentence case**, not as static navigation menu items. The "menu items use title case" rule applies to **navigational** menus (side nav, breadcrumbs, top-level nav links pointing to pages), not action menus.
+- **Buttons that reference a named page** (e.g. `"Go to Setup Wizard"`, `"Back to Project Hub"`, `"Open Access Review"`) **preserve the page name's title case** while the surrounding button copy stays sentence case. The page name is a proper noun in this context.
 
 ### Numbers and Dates
 
@@ -488,11 +488,8 @@ Use these research-backed metrics to create effective UX text.
 
 External references this skill is grounded in (consult these for any case the skill doesn't cover):
 
-- **Modus Style Guide** — Trimble's design-system writing rules (the canonical source for Modus-branded products).
 - **The Chicago Manual of Style** — fallback for grammar, punctuation, and citation questions.
 - **The Merriam-Webster Dictionary** — fallback for spelling and word choice.
-
-Lista Payroll inherits Prism's writing conventions, which are themselves aligned with Modus. When this skill conflicts with `lista-ui-conventions` (e.g. "Coming soon" copy), the Lista rule wins.
 
 ## Resources
 
