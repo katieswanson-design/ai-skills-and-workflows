@@ -97,7 +97,12 @@ TOKEN = r'`([a-z0-9]+(?:-[a-z0-9]+)+)`'
 EXTERNAL = {
     "figma-use": "Figma plugin — official skill shipped with the Figma MCP server",
     "cs-*":      "c-level-agents plugin — advisor agents and chief-of-staff routing",
+    "yt-dlp":    "external CLI tool — a dependency, not a skill",
 }
+
+# On tools: one entry is fine, several would be a signal. If external binaries
+# (ffmpeg, docker, pnpm) start accumulating here, the detector is matching tool
+# references it should not, and the fix belongs there rather than in this list.
 
 def external_source(target):
     """Return the provenance note for a known-external target, else None."""
