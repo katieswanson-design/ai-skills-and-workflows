@@ -88,6 +88,26 @@ known = set(by_name)
 # skill that lives outside this repo.
 TOKEN = r'`([a-z0-9]+(?:-[a-z0-9]+)+)`'
 
+# Targets that legitimately live outside this repo. A pointer to one of these
+# is expected, not breakage — it resolves wherever the named plugin is
+# installed, and would only "dangle" for someone cloning this repo alone.
+# Keys are exact names, or a "prefix-*" glob. Add to this list rather than
+# letting known-external targets sit in the unknown pile, where they drown
+# out the pointers that are actually broken.
+EXTERNAL = {
+    "figma-use": "Figma plugin — official skill shipped with the Figma MCP server",
+    "cs-*":      "c-level-agents plugin — advisor agents and chief-of-staff routing",
+}
+
+def external_source(target):
+    """Return the provenance note for a known-external target, else None."""
+    if target in EXTERNAL:
+        return EXTERNAL[target]
+    for key, note in EXTERNAL.items():
+        if key.endswith("*") and target.startswith(key[:-1]):
+            return note
+    return None
+
 def desc_field(body):
     m = re.search(r'^description:\s*(.+?)(?=^\w+:|^---)', body, re.M | re.S)
     return m.group(1) if m else ""
@@ -113,8 +133,13 @@ for s in skills:
     for target, src in sorted(candidates.items()):
         if target == s["name"]:
             continue
-        refs.append((s["name"], target,
-                     "RESOLVED" if target in known else "DANGLING", src, s["path"]))
+        if target in known:
+            kind = "RESOLVED"
+        elif external_source(target):
+            kind = "EXTERNAL"
+        else:
+            kind = "DANGLING"
+        refs.append((s["name"], target, kind, src, s["path"]))
 refs.sort()
 
 # ---------------------------------------------------------------- report
@@ -126,8 +151,10 @@ out("- **Skills (SKILL.md files):** %d\n" % len(skills))
 out("- **Distinct declared names:** %d\n" % len(by_name))
 out("- **Duplicate names:** %d\n" % sum(1 for v in by_name.values() if len(v) > 1))
 out("- **Categories:** %d\n" % len({s["cat"] for s in skills}))
-out("- **Cross-references:** %d resolved, %d dangling\n\n"
-    % (sum(1 for r in refs if r[2] == "RESOLVED"), sum(1 for r in refs if r[2] == "DANGLING")))
+out("- **Cross-references:** %d resolved, %d external, %d unknown\n\n"
+    % (sum(1 for r in refs if r[2] == "RESOLVED"),
+       sum(1 for r in refs if r[2] == "EXTERNAL"),
+       sum(1 for r in refs if r[2] == "DANGLING")))
 
 out("## Categories\n\n| Category | Skills |\n|---|---|\n")
 for cat, n in sorted(collections.Counter(s["cat"] for s in skills).items()):
@@ -147,14 +174,29 @@ out("\n## Cross-references\n\n")
 out("Only pointers the prose frames as skill references are counted. See the\n"
     "cross-refs comment in the script for the rule.\n\n")
 dangling = [r for r in refs if r[2] == "DANGLING"]
+out("### Unknown — target is not a skill here and is not a known external\n\n")
+out("These are the actionable ones: a stale pointer after a rename, or a\n"
+    "dependency nobody declared. Everything expected is in the next section.\n\n")
 if dangling:
-    out("### Dangling — target is not a skill in this repo\n\n")
     out("| From | To | Found in | Source file |\n|---|---|---|---|\n")
     for src, tgt, _, where, path in dangling:
         out("| `%s` | `%s` | %s | `%s` |\n" % (src, tgt, where, path))
     out("\n")
 else:
-    out("No dangling references.\n\n")
+    out("None.\n\n")
+
+ext = [r for r in refs if r[2] == "EXTERNAL"]
+out("### External — expected, resolves where the named plugin is installed\n\n")
+if ext:
+    out("| Target | Pointers | Provenance |\n|---|---|---|\n")
+    for tgt in sorted({r[1] for r in ext}):
+        out("| `%s` | %d | %s |\n"
+            % (tgt, sum(1 for r in ext if r[1] == tgt), external_source(tgt)))
+    out("\nThese would read as broken to someone cloning this repo on its own.\n"
+        "That is a portability decision, not a defect. Extend `EXTERNAL` in this\n"
+        "script when a new plugin dependency appears.\n\n")
+else:
+    out("None.\n\n")
 out("### Resolved\n\n")
 for src, tgt, _, where, _ in [r for r in refs if r[2] == "RESOLVED"]:
     out("- `%s` → `%s`  *(%s)*\n" % (src, tgt, where))
